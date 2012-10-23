@@ -21,8 +21,12 @@ class App < Sinatra::Base
     set :scss, Compass.sass_engine_options
   end
 
-  get "/" do
+  get "/example" do
     erb :index
+  end
+  
+    get "/" do
+    erb :wq
   end
 
   get "/stylesheets/*.css" do |path|

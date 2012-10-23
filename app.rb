@@ -21,12 +21,15 @@ class App < Sinatra::Base
     set :scss, Compass.sass_engine_options
   end
 
-  get "/" do
+ get "/" do
     erb :index
   end
+  
+
+   
 
   get "/stylesheets/*.css" do |path|
-    content_type "text/css", charset: "utf-8"
+    #content_type "text/css", charset: "utf-8"
     scss :"scss/#{path}"
   end
 end
