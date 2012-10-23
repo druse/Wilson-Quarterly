@@ -11,7 +11,7 @@ Grey: #404040;
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: "ff-tisa-sans-web-pro", Helvetica Neue, Arial, Helvetica, sans-serif;
+	font-family: "ff-tisa-web-pro", Helvetica Neue, Arial, Helvetica, sans-serif;
 	color: #404040;
 	font-size: 16px;
 	line-height: 30px;
@@ -37,12 +37,10 @@ body {
 	width: 168px;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
-	padding: 0px 5px 5px;
+	padding: 1px 5px;
 }
 
 .mainNav ul:hover {
-		background: url(/images/dark_stripes.png) #ddd;
-
 }
 
 .mainNav li{
@@ -50,8 +48,8 @@ body {
 	font-size: 18px;
 	border-radius: 6px;
 	background: #ddd;
-	margin: 5px auto 0;
-	padding: 0px 0 0;
+	margin: 5px auto;
+	padding: 0;
 }
 
 .mainNav a {
@@ -59,6 +57,7 @@ body {
 	text-decoration: none;
 	padding: 10px 20px 10px 10px;
 	display: block;
+	font-family: "ff-tisa-sans-web-pro"
 }
 
 .mainNav a:hover {
@@ -128,6 +127,7 @@ body {
 	float: left;
 	width: 350px;
 	text-transform: uppercase;
+	font-family: "ff-tisa-sans-web-pro"
 }
 
 .tertLinks {
@@ -241,6 +241,7 @@ h1.span {
 	top: 329px;
 	color: #478eda;
 	border-bottom-right-radius: 6px;
+	font-family: "ff-tisa-sans-web-pro"
 }
 
 h1 span.spacer {
@@ -262,6 +263,7 @@ h1 span.spacer {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 32px;
+	font-family: "ff-tisa-sans-web-pro"
 	}
 
 /*
@@ -377,6 +379,7 @@ a:hover {color: #478eda;}
 	font-size: 13px;
 	font-weight: bold;
 	text-decoration: none;
+	font-family: "ff-tisa-sans-web-pro"
 }
 
 .button-lg {
@@ -387,6 +390,7 @@ a:hover {color: #478eda;}
 	color: #fff;
 	text-decoration: none;
 	width: 178px;
+	font-family: "ff-tisa-sans-web-pro"
 }
 
 .btn-icon {background: url(/images/sub-btn-icon.png) no-repeat 10px center #0657af; padding-left: 40px;}
