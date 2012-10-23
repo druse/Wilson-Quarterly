@@ -8,4 +8,6 @@ group :development do
   gem "shotgun"
   gem "pry"
   gem "heroku"
+  gem "addressable"
+  gem "coderay"
 end
