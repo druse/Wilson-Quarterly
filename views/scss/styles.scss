@@ -260,7 +260,7 @@ h1 span.spacer {
 
 .lead {
 	color: #0657af; 
-	font-weight: bold;
+/* 	font-weight: bold; */
 	font-size: 18px;
 	line-height: 32px;
 	font-family: "ff-tisa-sans-web-pro"
@@ -363,11 +363,11 @@ h2 {font-size: 24px; line-height: 32px; color: #0657af}
 
 h3 {font-size: 18px; line-height: 24px; color: #478eda}
 
-h3 a {color:#0657af;}
+h3 a {color:#0657af;font-family: "ff-tisa-sans-web-pro"}
 
 h4 {font-size: 14px; font-weight: normal; line-height: 21px}
 
-a {color: #0657af;}
+a {color: #0657af;font-family: "ff-tisa-sans-web-pro"}
 
 a:hover {color: #478eda;}
 
