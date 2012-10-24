@@ -152,14 +152,14 @@ body {
 input[type="search"] {
 	-webkit-appearance: textfield;
 	border: none;
-	padding: 8px 5px;
+	padding: 0px 5px;
 	width: 165px;
 	margin-top: 8px;
 	background-color: #eee;
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
 	background: #fff;
-		height: 30px;
+    line-height: 30px;
 }
 
 .search-btn {
