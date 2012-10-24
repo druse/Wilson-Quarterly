@@ -24,6 +24,9 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+.wrapper {
+	min-width:1024px;
+}
 .header {
 	border-bottom-right-radius: 6px;
 	border-bottom-left-radius: 6px;
