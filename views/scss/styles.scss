@@ -650,3 +650,5 @@ blockquote p {padding-top: 20px;position: relative;}
 * html .clearfix {height: 1%;}
 /* IE7 */
 *:first-child+html .clearfix {min-height: 1px;}
+
+.lt-ie9 .search input {height: 35px;}
