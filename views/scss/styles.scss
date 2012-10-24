@@ -200,7 +200,7 @@ input[type="search"] {
 
 .meta_end {border-bottom: none;}
 
-.slug, .read_est, .share {
+footer .slug, .read_est, .share {
 	float: left;
 	background: url(/images/readtime.png) no-repeat 5px center;
 	font-size: 12px;
@@ -209,14 +209,29 @@ input[type="search"] {
 	padding-left: 30px;
 	background-color: #eee;
 	float: left;
-	border-radius: 6px;}
+	border-radius: 6px;
+	color: #404040}
 
-.read_est, .share {
+.share {
     float: right;
 }
 
-.slug {
+.read_est {
+	float: left;
+}
+
+footer .slug {
 	background-image: url(/images/slug_icon.png);
+}
+.hero .slug {
+    color: white;
+    font-size: 11px;
+    left: 0;
+    padding: 5px 20px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 198px;
 }
 
 .share {
@@ -232,7 +247,8 @@ input[type="search"] {
 	margin-top: 20px;	
 }
 
-.hero h1 span, .hero .author {
+.slug {color: white;}
+.hero .slug, .hero h1 span, .hero .author {
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0,0,0, .9);
 	padding: 10px 20px;
@@ -258,7 +274,7 @@ h1.span {
 .author {
 	position: absolute; 
 	top: 328px;
-	color: white;
+	color: #478eda;
 	border-bottom-right-radius: 6px;
 	font-family: "ff-tisa-sans-web-pro";
 	left: 0;
@@ -419,6 +435,7 @@ a:hover {color: #478eda;}
 	font-family: "ff-tisa-sans-web-pro";
 	line-height: 24px;
 	height: 24px;
+	display: inline-block;
 }
 
 .button-lg {
