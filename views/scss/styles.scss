@@ -140,12 +140,13 @@ body {
 }
 
 .search {
- border-left: 1px dashed #000000;
+	 border-left: 1px dashed #000000;
     float: right;
     height: 45px;
     padding:0 0 0 15px;
     width: 215px;
     background: #4b90d7;
+    box-sizing: border-box;
 }
 
 input[type="search"] {
@@ -461,7 +462,7 @@ blockquote:after {
     text-align: center;
     top: 0px;
     left: 50%;
-    margin-left: -65px;
+    margin-left: -40px;
     color:#f6ea32;
     text-shadow: 0 1px 1px rgba(255,255,255,0.1);
     margin-top: 30px;
