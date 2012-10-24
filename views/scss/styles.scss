@@ -489,11 +489,14 @@ blockquote p {padding-top: 20px;position: relative;}
 	margin: 50px 0 50px 10px;
 }
 
+#navigation {
+	position: relative;
+}
 .prev, .next {
-	position: absolute;
-	top: 50%;
-	height: 50px;
-	width: 50px;
+height: 50px;
+    position: absolute;
+    top: 45px;
+    width: 50px;
 }
 
 .prev {background: url(/images/prev.png)}
