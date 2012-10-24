@@ -15,13 +15,7 @@ body {
 	color: #404040;
 	font-size: 16px;
 	line-height: 30px;
-	background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(255,255,255,0) 10%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(10%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(255,255,255,0) 10%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(255,255,255,0) 10%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(255,255,255,0) 10%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(255,255,255,0) 10%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	background: url("/images/bg_pattern.jpg") repeat scroll 0 0 transparent
 }
 
 .wrapper {
@@ -133,7 +127,7 @@ body {
 	width: 350px;
 	text-transform: uppercase;
 	font-family: "ff-tisa-sans-web-pro";
-	color: #ddd;
+	color: #f6ea32;
 }
 
 .tertLinks {
@@ -240,7 +234,7 @@ input[type="search"] {
 
 .hero h1 span, .hero .author {
 	background: rgb(0, 0, 0); /* fallback color */
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0,0,0, .9);
 	padding: 10px 20px;
 	box-sizing: border-box;
 }
@@ -253,7 +247,7 @@ input[type="search"] {
 	position: absolute; 
 	left: 0; 
 	width: 100%; 
-	top: 250px;
+	top: 240px;
 	color: #f6ea32;
 }
 
@@ -263,8 +257,8 @@ h1.span {
 
 .author {
 	position: absolute; 
-	top: 338px;
-	color: #478eda;
+	top: 328px;
+	color: white;
 	border-bottom-right-radius: 6px;
 	font-family: "ff-tisa-sans-web-pro";
 	left: 0;
@@ -424,6 +418,7 @@ a:hover {color: #478eda;}
 	text-decoration: none;
 	font-family: "ff-tisa-sans-web-pro";
 	line-height: 24px;
+	height: 24px;
 }
 
 .button-lg {
@@ -446,7 +441,6 @@ a:hover {color: #478eda;}
 }
 
 blockquote {
-	font-family: Georgia, serif;
 	font-size: 32px;
 	margin: 30px 0;
 	padding: 80px 30px 0;
@@ -457,7 +451,7 @@ blockquote {
 	text-align: center;
 	border-top: 1px dashed #ccc;
 	border-bottom: 1px dashed #ccc;
-	
+	font-style: italic;
 }
 
 blockquote:after {
@@ -477,6 +471,7 @@ blockquote:after {
     color:#f6ea32;
     text-shadow: 0 1px 1px rgba(255,255,255,0.1);
     margin-top: 30px;
+    font-style: normal;
 }
 
 blockquote p {padding-top: 20px;position: relative;}
@@ -543,6 +538,15 @@ height: 50px;
 .discussion {
     margin-bottom: 30px;
 }
+
+.discussion header h2 {
+	float: left;
+}
+
+.discussion header .button {
+	float: right;
+}
+
 .comments {
 	border-top: 1px dashed #DDDDDD;
     padding-top: 20px;
@@ -550,9 +554,6 @@ height: 50px;
 }
 
 header .signin {
-	position: absolute;
-	top: 10px;
-	right: 0;
 }
 
 .text p {
