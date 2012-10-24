@@ -243,7 +243,7 @@ footer .slug {
 
 .hero .slug, .hero h1 span, .hero .author {
 	background: rgb(0, 0, 0); /* fallback color */
-	background: rgba(0,0,0, .9);
+	background: rgba(0,0,0, .6);
 	padding: 10px 20px;
 	box-sizing: border-box;
 }
@@ -267,6 +267,7 @@ footer .slug {
 	width: 100%; 
 	top: 240px;
 	color: #f6ea32;
+	font-family: "ff-tisa-sans-web-pro";
 }
 
 h1.span {
