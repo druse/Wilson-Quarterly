@@ -274,7 +274,7 @@ h1.span {
 	height: 48px;
 }
 
-.author {
+.hero .author {
 	position: absolute; 
 	top: 328px;
 	color: #478eda;
@@ -318,7 +318,7 @@ h1 span.spacer {
    right:0;
    border-width:0 16px 16px 0;
    border-style:solid;
-   border-color:#ccc #f4f4f4;
+   border-color:#ccc #f9f9f9;
 }
 
 .article > p:first-child:first-letter {
@@ -497,6 +497,25 @@ blockquote:after {
 	margin: 0;
     padding: 20px 0;
     position: relative;}
+    
+/* Landing Page */
+
+.issue-contents {
+	list-style-type: none;
+	padding: 0;
+}
+
+.issue-contents li {
+		float: left;
+	width: 50%;
+	-moz-box-sizing:border-box;
+	padding: 0 20px 0 0;
+}
+
+.issue-contents h3 {
+	margin-bottom: 0px;
+}
+
 
 /* Carousel Styles */
 

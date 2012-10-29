@@ -28,6 +28,10 @@ class App < Sinatra::Base
   get "/listing" do
     erb :listing
   end
+  
+    get "/home" do
+    erb :home
+  end
    
    
 
