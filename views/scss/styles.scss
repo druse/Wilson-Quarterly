@@ -75,11 +75,27 @@ body {
 	width: 178px;
 }
 
+.featureBlock {
+	width: 33%;
+	background: #ddd;
+	float: left;
+}
 .app_promo {
 	background: url(/images/app_promo.png) center 140px no-repeat;
 	padding-bottom: 120px;
 }
 
+.currentIssue img {
+border: 1px solid #478EDA;
+	}
+	
+.currentIssue img:hover {
+	border-color: #f6ea32
+}
+
+.currentIssue p, .currentIssue h4 {
+	margin: 0;
+}
 .tout p {
 	font-size: 14px;
 	line-height: 18px;
@@ -95,7 +111,7 @@ body {
 }
 
 .bar a {
-	border-left: 1px dashed #000;
+	border-left: 1px dashed #eee;
     color: #f6ea32;
     display: inline-block;
     font-size: 13px;
@@ -115,7 +131,7 @@ body {
 
 .bar a:hover {
 	color: #fff;
-	background-color: #4b90d7;
+	background-color: rgba(69, 144, 212, .7);
 	border-right-color: #4b90d7}
 
 .tagline {
@@ -128,7 +144,6 @@ body {
 	text-transform: uppercase;
 	font-family: "ff-tisa-sans-web-pro";
 	color: #478eda;
-	font-style: italic;
 }
 
 .tertLinks {
@@ -181,6 +196,85 @@ input[type="search"] {
 	background-color: #404040;
 }
 
+.switcher {background: white;}
+.switcher nav ul {
+  padding:30px 0 5px;
+  text-align:center;
+}
+.switchernav li {
+  display:inline;
+  padding:0 2px;
+}
+.switchernav a {
+  font:.75em "lucida grande", arial, sans-serif;
+  color:#08f;
+}
+.switcher #wrap {
+  position:relative;
+  width:300px;
+  margin:0 auto;
+  font:.9em/1.5 georgia, serif;
+}
+.switcher #wrap section {
+  position:absolute;
+  width:100%;
+  opacity:0;
+  -webkit-transition:opacity .4s linear;
+  -moz-transition:opacity .4s linear;
+  -o-transition:opacity .4s linear;
+}
+.switcher #wrap section:target {
+  opacity:1;
+  z-index:1;
+}
+.toc h2 {
+	padding: 20px 0;
+	font-family: "ff-tisa-web-pro";
+	text-align: center;
+	border-top: 1px solid #478eda;
+	border-bottom: 1px solid #478eda;
+
+}
+
+.toc h2 span {display: block; font-weight: normal;	color: #4590d4;text-transform: uppercase; font-size: 18px;}
+
+.toc div{
+	float: left;
+	width: 45%;
+}
+
+.inEssence {
+	margin-right: 10%;
+}
+
+.toc h4 {
+margin-bottom: 0;
+line-height: 30px;
+}
+
+.toc ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.toc li{
+padding-bottom: 25px;
+border-bottom: 1px dashed #eee;
+
+}
+.toc li p {
+	margin-top: 0;
+}
+
+.toc .author,.toc .details {display: block; color: #478eda; margin: 0; color: #777; font-size: 12px;font-family: "ff-tisa-sans-web-pro"; line-height: 21px;
+}
+
+.toc .author {
+	color: #478eda;
+}
+.toc .source {
+	text-transform: uppercase; color: #777; font-size: 12px;
+}
 .article {
 	padding-top: 0px;
 	position: relative;
@@ -235,34 +329,41 @@ footer .slug {
 	color: #478eda;	
 }
 
-.hero {
+.articleDetail .hero {
 	margin-top: 20px;	
 }
 
-.slug {color: white;}
+.slug {font-family: "ff-tisa-sans-web-pro", sans-serif;
+}
 
-.hero .slug, .hero h1 span, .hero .author {
+.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author {
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0,0,0, .6);
 	padding: 10px 20px;
 	box-sizing: border-box;
 }
+
 .hero .slug {
     color: white;
     font-size: 11px;
-    left: 0;
-    padding: 5px 20px;
-    position: absolute;
     text-decoration: none;
     text-transform: uppercase;
-    top: 198px;
     border-top-right-radius: 6px;
+    position: absolute;
+    left: 0;
+    padding: 5px 20px;
 }
 
-.hero h1 span {
+
+.hero p {    font-family: "ff-tisa-sans-web-pro", sans-serif;
+}
+.articleDetail .hero .slug {
+    top: 188px;
+
 }
 
-.hero h1 {
+
+.articleDetail .hero h1 {
 	position: absolute; 
 	left: 0; 
 	width: 100%; 
@@ -274,7 +375,7 @@ h1.span {
 	height: 48px;
 }
 
-.hero .author {
+.articleDetail .hero .author {
 	position: absolute; 
 	top: 328px;
 	color: #478eda;
@@ -292,12 +393,46 @@ h1 span.spacer {
 	width: 100%;
 }
 
-.hero {
+.articleDetail .hero {
 	position: relative; 
 	width: 100%;
 	height: 400px;
 }
 
+
+.issueLanding .hero {
+	background: #404040;
+	margin: 30px 0 0;
+}
+
+.issueLanding .hero img {
+	float: left;
+	width: 283px;
+}
+
+.issueLanding .hero div {
+	-moz-box-sizing: border-box;
+    float: left;
+    min-height: 340px;
+    padding: 20px 40px 20px 40px;
+    width: 480px;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    border-left: 1px dashed #AAAAAA;
+}
+
+.issueLanding h1 {
+	color:  #f6ea32;
+	margin: 40px 0 30px;
+}
+
+.issueLanding .hero .slug {
+    border-bottom-right-radius: 6px;
+    padding-left: 40px;
+    color: #478eda;
+   }
+   
 .lead {
  	background-color: #EEEEEE;
     font-family: "ff-tisa-sans-web-pro";
@@ -311,14 +446,14 @@ h1 span.spacer {
 	color: #0657af;
 	}
 
-.lead:before {
+.lead:before, .issueLanding .hero div:before {
    content:"";
    position:absolute;
    top:0;
    right:0;
    border-width:0 16px 16px 0;
    border-style:solid;
-   border-color:#ccc #f9f9f9;
+   border-color:#ccc #fff;
 }
 
 .article > p:first-child:first-letter {
@@ -351,6 +486,7 @@ padding-bottom: 5px
 .sidebar h4 {
 	margin-bottom: 5px;
 	font-size: 13px;
+	line-height: 19px
 }
 
 .sidebar p {margin-top: 0;}
@@ -417,11 +553,11 @@ h1.logo{
 
 h2 {font-size: 24px; line-height: 32px; color: #0657af;font-family: "ff-tisa-sans-web-pro"}
 
-h3 {font-size: 18px; line-height: 24px; color: #478eda}
+h3 {font-size: 18px; line-height: 24px; color: #404040}
 
-h3 a {color:#0657af;font-family: "ff-tisa-sans-web-pro"}
+h3 a {color:#0657af;font-family: "ff-tisa-sans-web-pro";}
 
-h4 {font-size: 14px; font-weight: normal; line-height: 21px}
+h4 {font-size: 16px; line-height: 21px; color: #0657af;}
 
 a {color: #0657af;font-family: "ff-tisa-sans-web-pro"}
 
@@ -492,6 +628,14 @@ blockquote:after {
     width: 80px;
 }
 
+.premium {
+	background: url(/images/icon-premium.png) no-repeat center center;
+	font-family: "ff-tisa-sans-web-pro", sans-serif;
+	margin-left: 10px;
+	width: 16px;
+	height: 16px;
+	display: inline-block
+}
 
 .article blockquote p { 
 	margin: 0;
@@ -502,26 +646,45 @@ blockquote:after {
 
 .issue-contents {
 	list-style-type: none;
-	padding: 0;
+	padding: 10px 0 0 0;
+	position: relative;
+	background: #eee;
+	margin-top: 0;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 
 .issue-contents li {
-		float: left;
+	float: left;
 	width: 50%;
 	-moz-box-sizing:border-box;
-	padding: 0 20px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 20px 0;
+
+}
+
+.issue-contents li img {
+	float: left;
+	margin-right: 10px;
+	border: 5px solid white;
 }
 
 .issue-contents h3 {
-	margin-bottom: 0px;
+	margin: 0;
+	color: #0657AF
+}
+
+.issue-contents span {	font-family: "ff-tisa-sans-web-pro", sans-serif;
+font-size: 14px;
 }
 
 
 /* Carousel Styles */
 
 .carousel {
-	border-top: 1px dashed #ddd;
-	border-bottom: 1px dashed #ddd;
+	border-top: 1px solid rgba(71, 147, 202, .2);
+	border-bottom: 1px solid rgba(71, 147, 202, .2);
 	position: relative;
 	margin: 50px 0 50px 10px;
 }
@@ -547,8 +710,7 @@ height: 50px;
 }
 
 .carousel h2 {
-/* 	text-align: center */
-}
+	margin-top: 30px}
 
 .carousel ul {
 	list-style-type: none;
@@ -563,6 +725,8 @@ height: 50px;
 }
 
 .carousel ul li img {
+box-sizing: border-box;
+border: 5px solid white;
 }
 .carousel ul li span {
 	font-size: 11px;
