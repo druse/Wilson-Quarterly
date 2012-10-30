@@ -25,8 +25,8 @@ class App < Sinatra::Base
     erb :index
   end
   
-  get "/listing" do
-    erb :listing
+  get "/issue" do
+    erb :issue
   end
   
     get "/home" do
