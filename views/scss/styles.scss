@@ -93,14 +93,15 @@ body {
 .featureBlock:last-child {border: none;}
 
 .featureBlock h3 {
-	color: #f6ea32;
+	color: #0657af;
 	margin-top: 0;
 	font-family: "ff-tisa-sans-web-pro"
 }
 
-.featureBlock h4 {margin-bottom: 0; color: white;
+.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	
 }
-.featureBlock h4 a {color: white;}
+.featureBlock h4 a {color: #f6ea32;font-family: "ff-tisa-web-pro"
+}
 
 .featureBlock .author {
 	font-size: 12px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
