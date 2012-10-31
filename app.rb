@@ -32,6 +32,10 @@ class App < Sinatra::Base
     get "/home" do
     erb :home
   end
+  
+      get "/article-sans" do
+    erb :articlesans
+  end
    
    
 

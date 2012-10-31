@@ -75,17 +75,55 @@ body {
 	width: 178px;
 }
 
+.contentBlocks {
+	    background: none repeat scroll 0 0 #478EDA;
+}
+
 .featureBlock {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: none repeat scroll 0 0 #478EDA;
     border-right: 1px dashed #EEEEEE;
     float: left;
     padding: 20px;
     width: 341px;
+    color: white;
+    min-height: 270px;
 }
 
 .featureBlock:last-child {border: none;}
+
+.featureBlock h3 {
+	color: #f6ea32;
+	margin-top: 0;
+	font-family: "ff-tisa-sans-web-pro"
+}
+
+.featureBlock h4 {margin-bottom: 0; color: white;
+}
+.featureBlock h4 a {color: white;}
+
+.featureBlock .author {
+	font-size: 12px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
+}
+
+.featureBlock {font-size: 14px;}
+
+.authorSpot {
+	margin-top: 20px;
+}
+
+.authorSpot img {border: 5px solid white;
+	float: left;
+	width: 80px;
+	margin-right: 20px;
+}
+
+.authorSpot p {
+	float: left;
+	width: 190px;
+	margin-top: 0;
+}
+
 
 .app_promo {
 	background: url(/images/app_promo.png) center 150px no-repeat #404040;
@@ -222,7 +260,7 @@ input[type="search"] {
 	background-color: #404040;
 }
 
-.popular {margin-bottom: 20px;}
+.popular {margin-bottom: 30px; padding-bottom: 30px;}
 
 .popular section {
 	width: 50%;
@@ -346,8 +384,15 @@ border-bottom: 1px dashed #ddd;
 	margin-top: 0;
 }
 
-.curated {
-	border-top: 1px solid #ddd;
+.optionalAd {
+	display: block;
+	background: #404040;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.curated, .popular {
 	border-bottom: 1px solid #ddd;
 }
 
@@ -629,7 +674,7 @@ h1 span.spacer {
 	color: #eee;
 	}
 
-.lead:before, .issueLanding .hero div:before, .home .hero div:before, .app_promo:before{
+.lead:before, .issueLanding .hero div:before, .home .hero div:before, .app_promo:before, .featureBlock:before{
    content:"";
    position:absolute;
    top:0;
