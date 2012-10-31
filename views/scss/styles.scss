@@ -337,12 +337,12 @@ background-color: #eee;
 }
 
 .icon-inessence {
-			background: url(/images/icon-inessence.png) no-repeat left center;
+			background: url(/images/icon-inessence.png) no-repeat left 5px;
 			padding-left: 30px
 }
 
 .icon-book {
-			background: url(/images/icon-book.png) no-repeat left center;
+			background: url(/images/icon-book.png) no-repeat left 5px;
 			padding-left: 30px
 }
 
@@ -352,7 +352,11 @@ background-color: #eee;
 	text-align: center;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+}
 
+.toc h3 {
+	border-bottom: 1px dashed #eee;
+	padding-bottom: 20px;
 }
 
 .toc h2 span {display: block; font-weight: normal;	color: #4590d4;text-transform: uppercase; font-size: 18px;}
