@@ -508,7 +508,7 @@ footer .slug {
 .slug { font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
-.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author {
+.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.articleDetail .hero-vert .slug, .articleDetail .hero-vert h1 span, .articleDetail .hero-vert .author {
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
@@ -523,7 +523,7 @@ padding:17px 20px 10px;
 font-family: "ff-tisa-sans-web-pro";
 }
 
-.hero .slug {
+.hero .slug, .hero-vert .slug {
     color: white;
     font-size: 11px;
     text-decoration: none;
@@ -540,9 +540,12 @@ font-family: "ff-tisa-sans-web-pro";
 
 .articleDetail .hero .slug {
     top: 188px;
-
 }
-
+.articleDetail .hero-vert .slug {
+   left: 381px;
+    top: 27px;
+    z-index: 9999;
+}
 .articleDetail .hero h1 {
 	position: absolute; 
 	left: 0; 
@@ -550,7 +553,15 @@ font-family: "ff-tisa-sans-web-pro";
 	top: 240px;
 	color: #f6ea32;
 }
-
+ .articleDetail .hero-vert h1{
+ color: #F6EA32;
+    left: 381px;
+    position: absolute;
+    top: 78px;
+    width: 100%;
+    z-index: 9999;
+    font-size:36px;}
+    
 h1.span {
 	height: 48px;
 }
@@ -563,7 +574,14 @@ h1.span {
 	font-family: "ff-tisa-sans-web-pro";
 	left: 0;
 }
-
+ .articleDetail .hero-vert .author{
+  border-bottom-right-radius: 6px;
+    color: #478EDA;
+    font-family: "ff-tisa-sans-web-pro";
+    left: 381px;
+    position: absolute;
+    top: 158px;
+    z-index: 9999;}
 .articleDetail .hero .sans .slug {top: 208px;}
 
 .articleDetail .hero .sans h1 {margin-top: 0;top:274px;}
@@ -579,12 +597,17 @@ h1 span.spacer {
 	width: 100%;
 }
 
-.articleDetail .hero {
+.articleDetail .hero,{
 	position: relative; 
 	width: 100%;
 	height: 400px;
 }
 
+ .articleDetail .hero-vert {
+	 width: 380px;
+	 height: 570px;
+	 float: left;
+ }
 .home .hero {
 	background: #404040;
 }
@@ -641,6 +664,12 @@ h1 span.spacer {
 .home .hero h2 {
 	margin: 40px 0 0;
 }
+
+.hero-vert img {
+	float: left;
+}
+
+
 
 .home .hero .author {color: #478eda;
 	font-family: "ff-tisa-sans-web-pro";
@@ -713,6 +742,18 @@ h1 span.spacer {
 	color: #eee;
 	}
 
+
+.vert {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-bottom-left-radius: 0;
+    border-left: 1px dashed #777777;
+    float: left;
+    height: 570px;
+    margin-top: 0;
+    padding: 235px 30px 30px;
+    width: 50%;
+}
 .lead:before, .issueLanding .hero div:before, .home .hero div:before, .app_promo:before, .featureBlock:before{
    content:"";
    position:absolute;
@@ -736,6 +777,7 @@ h1 span.spacer {
     font-size: 50px;
     font-weight: bold;
     padding-right: 5px;
+    
 }
 .sidebar {
 	font-size: 12px;

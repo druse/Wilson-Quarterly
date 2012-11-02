@@ -36,6 +36,10 @@ class App < Sinatra::Base
       get "/article-sans" do
     erb :articlesans
   end
+  
+      get "/article-vert" do
+    erb :articlevert
+  end
    
    
 
