@@ -18,6 +18,11 @@
 	<div class="tout">
 		<a href="" class="button-lg btn-icon">Subscribe to WQ</a>
 	</div>
+	<div class="search tout">
+		<h3>Search WQ</h3>
+		<input type="search" title="Search" name="Search" placeholder=""/>
+		<input type="submit" alt="Search" class="button-lg btn-icon" name="search-btn" value="Search"/>
+	</div>
 	<div class="tout currentIssue">
 		<h3>Current Issue</h3>
 		<a href=""><img src="/images/cover_small.jpg"></a>
@@ -29,11 +34,15 @@
 		<p>The Wilson Quarterly is now on iPad, Kindle & Nook. <a href="">Download the app</a></p>
 	</div>	
 </div>
+		<div class="login">
+			<a href="">Login</a>
+		</div>
+<!--
 <div class=" grid_9 last">
 	<div class="bar grid_9 first">
 		<div class="tertLinks">
 			<a href="" class="login">Login</a>
-<!-- 			<a href="" class="account">My Account</a> -->
+			<a href="" class="account">My Account</a>
 		</div>
 		<div class="search">
 			<input type="search" title="Search" name="Search" placeholder="Search"/>
@@ -41,20 +50,35 @@
 		</div>
 	</div>
 </div>
+-->
 	
 <div class="grid_9 last">
-	<div class="hero clearfix">
-			<img src="/images/hero-home.jpg">
-			<div class="content">
+	<div class="hero-vert clearfix">
+			<img src="/images/hero-vert.jpg">
 			<span class="slug">Autumn 2012</span>
-			<h2><span>India’s Feckless Elite</span></h2>
+			<h2><span><a href="">India’s Feckless Elite</span></a></h2>
 			<span class="author">Sadanand Dhume</span>
-			<p class="">Its political class may not be up to the task of leading India toward prosperity.</p>
-			<a class="button-lg" href="">Read Full Article</a>
-			<a class="button-lg" href="">View the Entire Issue</a>
+			</div>
+			<div class="vert">
+			<p class="lead">Its political class may not be up to the task of leading India toward prosperity.</p>
+			<h3>Related Stories</h3>
+			<ul class="hero-related">
+				<li><a href="">The Dawn of Market Urbanism</a></li>
+				<li><a href="">The Withering of the Affluent</a></li>
+				<li><a href="">Beyond the Brain</a></li>
+			</ul>
 			</div>
 		</div>
-</div>
+<!--
+		<div class="hero-vert">
+			<img src="/images/hero-vert-alt.jpg">
+			<a class="slug" href="">Summer 2012</a>
+			<h1 class=""><span>Beyond the Brain</span></h1>
+			<span class="author">Tanya Marie Luhrmann</span>
+		</div>
+				<p class="lead vert">In the 1990s, scientists declared that schizophrenia and other psychiatric illnesses were pure brain disorders that would eventually yield to drugs. Now they are recognizing that social factors are among the causes, and must be part of the cure.</p>
+-->
+
 <div class="grid_9 rotator">
 	<div id="navigation" class="grid_9 first">
 			<span href="" class="prev">&nbsp;</span>
@@ -74,8 +98,10 @@
 <div class="grid_9 optionalAd">
 <p>Optional Ad Space</p>
 </div>
-<div class="grid_9 curated">
-		<h3>Curated Articles</h3>
+<div class="grid_9 curated section">
+		<header class="clearfix">
+			<h3>Curated Articles</h3>
+		</header>
 		<ul class="articles clearfix">
 			<li class="grid_3 first">
 				<span class="slug">Findings</span>
@@ -94,8 +120,10 @@
 			</li>	
 		</ul>
 </div>
-<div class="popular grid_9 last">
+<div class="popular grid_9 last section">
+		<header class="clearfix">
 		<h3>What's Popular</h3>
+		</header>
 <!--
 			<nav>
 				<ul class="clearfix">
