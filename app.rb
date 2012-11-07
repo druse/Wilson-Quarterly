@@ -41,6 +41,10 @@ class App < Sinatra::Base
     erb :articlevert
   end
    
+       get "/home-vert" do
+    erb :homevert
+  end
+   
    
 
   get "/stylesheets/*.css" do |path|

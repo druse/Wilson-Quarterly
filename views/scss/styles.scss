@@ -235,7 +235,7 @@ border-bottom-left-radius: 6px;
 	background: url(/images/tagline-bg.png) no-repeat center top #404040;
 	width: 178px;
 	text-align: center;
-	line-height: 24px;
+	line-height: 21px;
 	padding: 15px 10px 10px;
 	font-size: 14px;
 	box-sizing: border-box;
@@ -508,7 +508,7 @@ border-bottom: 1px dashed #ddd;
 .meta, .meta_end {
 	border-bottom: 1px dashed #ddd;
 	font-size: 12px;
-	padding: 10px 0 15px;
+	padding: 0 0 15px;
 	line-height: 20px;
 	border-bottom: 1px dashed #ddd;
 	font-family: "ff-tisa-sans-web-pro"
@@ -516,7 +516,7 @@ border-bottom: 1px dashed #ddd;
 
 .meta_end {border-bottom: none;}
 
-footer .slug, .read_est, .share {
+footer .slug, .read_est, .share, .commentLink {
 	float: left;
 	background: url(/images/readtime.png) no-repeat 5px center;
 	font-size: 12px;
@@ -535,6 +535,12 @@ footer .slug, .read_est, .share {
 	margin-left: 10px;
 }
 
+.commentLink {
+	background-image: url(/images/icon-comments.png);
+	margin-left: 10px;
+	padding: 7px 8px 7px 30px;
+	float: right
+}
 .print, .rss { background: url("/images/print.png") no-repeat scroll 0 0 transparent;
     display: inline-block;
     height: 16px;
@@ -548,6 +554,7 @@ footer .slug, .read_est, .share {
 
 .read_est {
 	float: left;
+	padding: 7px 8px 7px 30px;
 }
 
 footer .slug {
@@ -566,7 +573,7 @@ footer .slug {
 .slug { font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
-.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.hero-vert .slug, .hero-vert h1 span, .hero-vert .author, .hero-vert h2 span{
+.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.hero-vert .slug, .hero-vert h1 span, .hero-vert .author, .hero-vert h2 span, .home .hero h2 span, .home .hero .slug, .home .hero .author{
 	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
@@ -579,7 +586,7 @@ footer .slug {
 }
 
 
-.hero .slug, .hero-vert .slug {
+.hero .slug, .hero-vert .slug, .home .hero .slug {
     color: white;
     font-size: 11px;
     text-decoration: none;
@@ -594,7 +601,7 @@ footer .slug {
 .hero p {font-family: "ff-tisa-sans-web-pro", sans-serif; color: white;
 }
 
-.articleDetail .hero .slug {
+.articleDetail .hero .slug, .home .hero .slug {
     top: 188px;
 }
 .hero-vert .slug {
@@ -602,13 +609,17 @@ footer .slug {
     top: 37px;
     z-index: 9999;
 }
-.articleDetail .hero h1 {
+.articleDetail .hero h1, .home .hero h2 {
 	position: absolute; 
 	left: 0; 
 	width: 100%; 
 	top: 240px;
 	color: #f6ea32;
+	font-size: 42px;
+	font-family: "ff-tisa-web-pro";
 }
+
+.home .hero h2 {top:223px}
 .hero-vert h1, .hero-vert h2{
  color: #F6EA32;
     left: 381px;
@@ -616,6 +627,8 @@ footer .slug {
     top: 78px;
     z-index: 9999;
     font-size:36px;}
+    
+
  .hero-vert h2 {top: 78px;}    
  .home .hero-vert .slug {top: 39px;}
  .home .hero-vert h2 {top: 43px; line-height: 36px}
@@ -629,7 +642,7 @@ h1.span {
 	height: 48px;
 }
 
-.articleDetail .hero .author {
+.articleDetail .hero .author, .home .hero .author {
 	position: absolute; 
 	top: 328px;
 	color: #478eda;
@@ -637,6 +650,8 @@ h1.span {
 	font-family: "ff-tisa-sans-web-pro";
 	left: 0;
 }
+.home .hero .author {top:319px}
+
 .hero-vert .author{
   border-bottom-right-radius: 6px;
     color: #478EDA;
@@ -645,19 +660,28 @@ h1.span {
     position: absolute;
     top: 158px;
     z-index: 9999;}
-    .home .vert {padding:230px 0 0px}
+    .home .vert {padding:230px 30px 0px}
     .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; border-top: 1px dashed #777}
-    .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px}
+/*     .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px} */
     
-    .home .vert h3 {  border-top: 1px dashed #777777;
+    .home .vert h3, .home .lead h3 {  border-top: 1px dashed #777777;
     color: #478EDA;
     margin-bottom: 0;
-    margin-top: 60px;
+    margin-top: 40px;
     padding-top: 20px;}
-    .vert a {color: #F6EA32 }
-    .vert .hero-related {font-size: 14px;}
+     .home .lead h3 {margin-top: 20px}
+    .vert a, .home .lead a {color: #F6EA32 }
+    .vert .hero-related, .home .hero-related {font-size: 14px;}
     .vert  {
 	    color: white;
+    }
+    .home .hero-related {
+	    	    margin-bottom: 0;
+    }
+    .home .hero-related li {
+	    float: left;
+	    margin-right: 20px;
+
     }
 .articleDetail .hero .sans .slug {top: 208px;}
 
@@ -674,7 +698,7 @@ h1 span.spacer {
 	width: 100%;
 }
 
-.articleDetail .hero,{
+.articleDetail .hero, .home .hero{
 	position: relative; 
 	width: 100%;
 	height: 400px;
@@ -688,16 +712,18 @@ h1 span.spacer {
  }
 .home .hero {
 	background: #404040;
+	height:400px
 }
+.home .lead {border-radius: 0;}
 
 .issueLanding .hero {
 	background-color: #404040;
 	position: relative;
 }
 
-.home .hero img{
+.home .hero-vert img{
 	float: left;
-	width: 283px;
+/* 	width: 283px; */
 	-moz-box-sizing: border-box;
     border-right: 1px dashed #AAAAAA;
     box-sizing: border-box;
@@ -705,7 +731,7 @@ h1 span.spacer {
 
 .issueLanding .hero div img {padding: 0; margin: 10px 0 20px; float: left}
 
-.home .hero div {
+.home .hero-vert div {
 	-moz-box-sizing: border-box;
     float: left;
     min-height: 340px;
@@ -720,7 +746,7 @@ h1 span.spacer {
 .issueLanding .hero div a {margin: 20px 0 0 20px; float: left}
 .issueLanding .hero p {font-size: 18px; text-align: center;padding: 0 50px; -moz-box-sizing: border-box; box-sizing: border-box;}
 
-.issueLanding h1, .home .hero h2 a{
+.issueLanding h1,{
 	color:  #f6ea32;
 	margin: 40px 0 30px;
 	font-size: 42px;
@@ -760,26 +786,10 @@ margin-left: 20px;
 
 .issue-contents li img {border-color: #ddd;}
 
-
-.home .hero h2 {
-	margin: 40px 0 0;
-}
-
 .hero-vert img {
 	float: left;
 }
 
-
-
-.home .hero .author {color: #478eda;
-	font-family: "ff-tisa-sans-web-pro";
-}
-.home .hero .slug {
-    border-bottom-right-radius: 6px;
-    padding-left: 40px;
-    color: white;
-   }
-   
 .rotator {
 	background: #eee;
 	margin-bottom: 30px;
@@ -789,6 +799,7 @@ margin-left: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 30px 50px;
+	height: 321px
 }
    
 .slide .content {
@@ -796,7 +807,7 @@ margin-left: 20px;
 	width: 300px;
 }
 
-.content h3 {color: #f6ea32; margin-bottom: 0;}
+.content h3, .content h2 a {color: #0657af; margin-bottom: 0;}
 .content a {color: #eee}
 
 .slide .content h2 {margin-top:0;}
@@ -896,8 +907,7 @@ margin-left: 20px;
 .issueLanding .hero-vert img {
 	width: 380px;
 }
-/*
-.articleDetail .lead:before, .home .hero div:before, .app_promo:before, .featureBlock:before{
+/* .articleDetail .lead:before, .home .hero div:before, */ .app_promo:before/* , .featureBlock:before */{
    content:"";
    position:absolute;
    top:0;
@@ -906,7 +916,6 @@ margin-left: 20px;
    border-style:solid;
    border-color:#ccc #fff;
 }
-*/
 
 .article > p:first-child:first-letter {
 	font-size: 50px; 
@@ -1131,6 +1140,9 @@ blockquote.double:after {    left: 360px;
     padding-top: 5px;
     text-align: center;
 }
+
+
+
 /*
 .featureBlock blockquote:before {
   	background: none repeat scroll 0 0 #0657AF;
@@ -1180,7 +1192,28 @@ blockquote.double:after {    left: 360px;
     font-style: normal;
     padding: 10px 0;
 }
+.slide blockquote {
+    border: 0 none;
+    margin: 20px 0 0;
+    padding: 10px 115px;
+    width: 430px;
+    color: white
+}
 
+.slide blockquote.double:before {   background-color: #4590D4;
+    color: #4590D4;
+    margin-left: -350px;
+    top: 35px;color:#F6EA32}
+.slide blockquote.double:after {     background-color: #4590D4;
+    color: #4590D4;
+  margin-left: 210px;
+    top: 35px;color:#F6EA32}
+    
+    .home-horz .slide .content h2 {text-align: center; margin-top: 20px; color:#F6EA32
+    }
+    .home-horz .slide .content h2 a {color: #F6EA32}
+    .home-horz .slide {background-color:#0657AF}
+    .home-horz .slide .content {width: 100%;  }
 .premium {
 	background: url(/images/icon-premium.png) no-repeat center center;
 	font-family: "ff-tisa-sans-web-pro", sans-serif;
@@ -1205,8 +1238,8 @@ blockquote.double:after {    left: 360px;
 	padding: 0px 0 0 0;
 	position: relative;
 	background: #404040;
-	margin-top: 30px;
-	width: 50%;
+    margin: 30px 0 0;
+   	width: 50%;
 	float: left;
 }
 
@@ -1251,6 +1284,7 @@ blockquote.double:after {    left: 360px;
 .issue-contents a {
 	display: block;
 	margin-bottom: 0;
+	line-height: 24px;
 }
 
 .issue-contents a:hover {
@@ -1318,6 +1352,10 @@ height: 50px;
     margin-top: 0;
     padding: 15px 20px 10px;}
 
+.discussion header h2 a {
+	text-decoration: none;
+	color: white
+}
 .carousel ul {
 	list-style-type: none;
 	padding: 0;
