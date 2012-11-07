@@ -911,7 +911,7 @@ margin-left: 20px;
 .issueLanding .hero-vert img {
 	width: 380px;
 }
-/* .articleDetail .lead:before, .home .hero div:before, */ .app_promo:before/* , .featureBlock:before */{
+/* .articleDetail .lead:before, .home .hero div:before, */ .app_promo:before, .featureBlock:before {
    content:"";
    position:absolute;
    top:0;
@@ -1348,7 +1348,7 @@ height: 50px;
 }
 
 .carousel h2, .discussion header h2 {
-	  background: none repeat scroll 0 0 #478EDA;
+	  background: none repeat scroll 0 0 #0657AF;
     color: white;
     display: inline;
     float: left;
