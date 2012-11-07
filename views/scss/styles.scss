@@ -84,6 +84,7 @@ textarea {
 
 .contentBlocks {
 	    background: none repeat scroll 0 0 #478EDA;
+	    margin-top: 50px;
 }
 
 .featureBlock {
@@ -94,7 +95,8 @@ textarea {
     padding: 20px;
     width: 341px;
     color: white;
-    min-height: 270px;
+    min-height: 300px;
+    font-size: 16px;
 }
 
 .featureBlock:last-child {border: none;}
@@ -114,7 +116,6 @@ textarea {
 	font-size: 12px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
 }
 
-.featureBlock {font-size: 14px;}
 
 .authorSpot {
 	margin-top: 20px;
@@ -201,6 +202,9 @@ border: 1px solid #478EDA;
 	z-index: 9999;
 }
 
+.home .login {position: relative;}
+
+.home .login a {}
 .login a {background: url(/images/login_icon.png) no-repeat 10px center rgba(0,0,0,.8); 
 border-bottom-right-radius: 6px; 
 border-bottom-left-radius: 6px;
@@ -214,6 +218,7 @@ border-bottom-left-radius: 6px;
     color: #eee;
     font-size: 13px;
 }
+
 .account {background: url(/images/account_icon.png) no-repeat 10px center;}
 
 .login a:hover {
@@ -236,6 +241,9 @@ border-bottom-left-radius: 6px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+
+.home .tagline {color: #eee}
+.issueLanding .tagline {color: #e90007}
 
 .tertLinks {
 	float: right;
@@ -467,10 +475,6 @@ border-bottom: 1px dashed #ddd;
 	margin-bottom: 20px;
 }
 
-.curated, .popular {
-	border-bottom: 1px solid #ddd;
-}
-
 .curated .articles li {
 	padding-top: 0;
 	-moz-box-sizing: border-box;
@@ -563,19 +567,17 @@ footer .slug {
 }
 
 .articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.hero-vert .slug, .hero-vert h1 span, .hero-vert .author, .hero-vert h2 span{
-	background: rgb(0, 0, 0); /* fallback color */
+	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
 	box-sizing: border-box;
 }
 
-.articleDetail .hero h1.sans {
+.home .hero-vert h2,.home .hero-vert .slug, .home .hero-vert .author {
+	background: none;
+	padding: 10px 20px 0 30px;
 }
 
-.articleDetail .hero .sans h1 span{
-padding:17px 20px 10px;
-font-family: "ff-tisa-sans-web-pro";
-}
 
 .hero .slug, .hero-vert .slug {
     color: white;
@@ -615,12 +617,14 @@ font-family: "ff-tisa-sans-web-pro";
     z-index: 9999;
     font-size:36px;}
  .hero-vert h2 {top: 78px;}    
- .home .hero-vert .slug {top: 49px;}
- .home .hero-vert h2 {top: 83px;}
- .home .hero-vert .author {top: 168px;}
- .hero-vert h2 a {color: #F6EA32; font-size: 35px;}
+ .home .hero-vert .slug {top: 39px;}
+ .home .hero-vert h2 {top: 43px; line-height: 36px}
+ .home .hero-vert .author {top: 165px;}
+ .hero-vert h2 a {color: #F6EA32; font-size: 35px;font-family: "ff-tisa-web-pro";}
+  .hero-vert h2 a:hover {color: #478eda}
   .hero-vert h2 span{padding: 20px;}
   .vert .lead {padding-left: 0; padding-top: 5px;}
+  .home .vert .lead {padding-top: 0}
 h1.span {
 	height: 48px;
 }
@@ -641,8 +645,15 @@ h1.span {
     position: absolute;
     top: 158px;
     z-index: 9999;}
+    .home .vert {padding:230px 0 0px}
+    .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; border-top: 1px dashed #777}
+    .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px}
     
-    .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0;}
+    .home .vert h3 {  border-top: 1px dashed #777777;
+    color: #478EDA;
+    margin-bottom: 0;
+    margin-top: 60px;
+    padding-top: 20px;}
     .vert a {color: #F6EA32 }
     .vert .hero-related {font-size: 14px;}
     .vert  {
@@ -727,6 +738,29 @@ h1 span.spacer {
     text-align: center;
     padding-top: 20px;}
 
+.hero-issue {
+	background-color: #404040;
+}
+
+.hero-issue header {
+	text-align: center;
+	padding: 40px 0 0px;
+	border-bottom: 1px dashed #777;
+}
+.hero-issue .slug{
+color: white;
+}
+
+.hero-issue p {color: white; padding: 20px 80px; text-align: center;font-family: "ff-tisa-sans-web-pro"; font-size: 16px;}
+
+.hero-issue a.button-lg {
+margin-left: 20px;
+}
+.hero-issue img.cover {float: left; width: 40%; margin: 30px 5% 0; border: 5px solid #333; box-sizing: border-box; -moz-box-sizing: border-box;}
+
+.issue-contents li img {border-color: #ddd;}
+
+
 .home .hero h2 {
 	margin: 40px 0 0;
 }
@@ -780,7 +814,7 @@ h1 span.spacer {
 	background-color: #ddd;
 }
 .home .rotator .prev, .home .rotator .next {
-    top: 165px;
+    top: 130px;
     border: 5px solid white;
     border-radius: 50px;
 }
@@ -1047,7 +1081,7 @@ ul li {list-style-type: none;}
 }
 
 blockquote {
-border-bottom: 1px dashed #CCCCCC;
+	border-bottom: 1px dashed #CCCCCC;
     border-top: 1px dashed #CCCCCC;
     color: #0657AF;
     font-size: 30px;
@@ -1058,11 +1092,17 @@ border-bottom: 1px dashed #CCCCCC;
     position: relative;
 }
 
-blockquote:after {
+blockquote.double {
+	padding: 100px 0; text-align: center
+}
+blockquote.double cite { color: #404040;
+    display: block;
+    font-style: normal;font-size: 21px; margin: 10px 0;}
+blockquote:after, blockquote.double:before {
   	background: none repeat scroll 0 0 #0657AF;
     border-radius: 50% 50% 50% 50%;
     color: #F6EA32;
-    content: "\201C";
+    content: "\201D";
     font-family: Georgia;
     font-size: 135px;
     font-style: normal;
@@ -1070,12 +1110,75 @@ blockquote:after {
     left: 0;
     line-height: 150px;
     margin-left: -120px;
-    margin-top: 29px;
+    top: 27px;
     position: absolute;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
-    top: -4px;
     width: 80px;
+}
+
+blockquote.double:before { left: 360px;
+    top: 27px;    content: "\201C"; background-color: #0657AF; 
+}
+blockquote.double:after {    left: 360px;
+    top: 270px;    content: "\201D"; background-color: #0657AF; }
+
+.featureBlock blockquote {   
+    border: 0 none;
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 5px;
+    text-align: center;
+}
+/*
+.featureBlock blockquote:before {
+  	background: none repeat scroll 0 0 #0657AF;
+    border-radius: 50% 50% 50% 50%;
+    color: #F6EA32;
+    content: "\201C";
+    font-family: Georgia;
+    font-size: 135px;
+    font-style: normal;
+    height: 60px;
+    left: 0;
+    line-height: 150px;
+    margin-left: 110px;
+    margin-top: -78px;
+    position: absolute;
+    text-align: center;
+    top: -4px;
+    width: 60px;
+}
+*/
+.featureBlock blockquote:after, .featureBlock blockquote:before {
+    font-size: 100px;
+    height: 60px;
+    line-height: 115px;
+    margin-left: 125px;
+    margin-top: 150px;
+    top: 20px;
+    width: 60px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    font-family: Georgia;
+    font-style: normal;
+    background: none repeat scroll 0 0 #0657AF;
+    border-radius: 50% 50% 50% 50%;
+    color: #F6EA32;
+    content: "\201D";
+    }
+    
+.featureBlock blockquote:before {top: -230px;    content: "\201C";
+}
+
+.featureBlock cite {
+   color: #F6EA32;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px 0;
 }
 
 .premium {
@@ -1097,17 +1200,14 @@ blockquote:after {
 .ls-contents {background-color: #eee; margin-top: 0;	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;}
 
-
-.ls-contents li img {}
-
-.issue-contents{
+.issue-contents {
 	list-style-type: none;
 	padding: 0px 0 0 0;
 	position: relative;
 	background: #404040;
-	margin: 0;
-
-	border-top: 1px dashed #777;
+	margin-top: 30px;
+	width: 50%;
+	float: left;
 }
 
 .issue-contents li,.ls-contents li {
@@ -1117,28 +1217,44 @@ blockquote:after {
 	padding: 0 20px;
 	box-sizing: border-box;
 	margin: 20px 0;
-
 }
-
-.issue-contents li img,.ls-contents li img {
+.issue-contents li {width: 100%; margin: 0 0 30px;	padding: 0 30px 0 20px;
+}
+.issue-contents li img,.ls-contents li img{
 	float: left;
 	margin-right: 10px;
 	border: 5px solid white;
 	width: 120px;
 	height: 80px;
 }
-
+.issue-contents li img {
+	width: 80px;
+	height: 60px;
+	border-color: #ddd;
+}
 .ls-contents h2 {
 	padding-top: 30px;
 	margin: 0px 0 10px 20px;
     color: #404040;
+    border-color: #ddd;
 }
-.issue-contents h3, .issue-contents h3 a,.ls-contents h3, .ls-contents h3 a{
+.issue-contents h3, .issue-contents h3 a,.ls-contents h3, .ls-contents h3 a, .issue-contents a{
 	margin: 0;
-	color: #0657AF
+	color: #0657AF;
+	font-size: 16px;
 }
-.issue-contents h3, .issue-contents h3 a{
-	color: #F6EA32
+.issue-contents h3, .issue-contents h3 a,.issue-contents a{
+	color: #F6EA32;
+	
+}
+
+.issue-contents a {
+	display: block;
+	margin-bottom: 0;
+}
+
+.issue-contents a:hover {
+	color: #478EDA
 }
 .issue-contents span, .ls-contents span {	font-family: "ff-tisa-sans-web-pro", sans-serif;
 font-size: 14px;
@@ -1150,19 +1266,20 @@ color: #4590D4;
 }
 
 .section {
-	    border-top: 1px solid rgba(71, 147, 202, .2);
+	    border-top: 1px dashed #ddd;
+	    padding: 10px 0;
 }
 
 .section h3 {
-	background: none repeat scroll 0 0 #478EDA;
-    color: white;
+    color: #0657AF;
     display: inline;
     float: left;
-    margin-top: 0;
-    padding: 15px 20px 10px;
     font-family: "ff-tisa-sans-web-pro";
-    font-size: 24px;
+    font-size: 21px;
     line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 0;
 }
 
 /* Carousel Styles */
