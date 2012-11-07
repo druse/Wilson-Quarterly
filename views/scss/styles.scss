@@ -563,7 +563,8 @@ footer .slug {
 }
 
 .articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.hero-vert .slug, .hero-vert h1 span, .hero-vert .author, .hero-vert h2 span{
-
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
 	box-sizing: border-box;
 }
