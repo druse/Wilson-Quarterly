@@ -82,6 +82,9 @@ textarea {
 	width: 178px;
 }
 
+.tout h3 {
+	font-size: 18px
+}
 .contentBlocks {
 	    background: none repeat scroll 0 0 #478EDA;
 	    margin-top: 50px;
@@ -95,7 +98,7 @@ textarea {
     padding: 20px;
     width: 341px;
     color: white;
-    min-height: 300px;
+    height: 320px;
     font-size: 16px;
 }
 
@@ -105,7 +108,6 @@ textarea {
 	color: #0657af;
 	margin-top: 0;
 	font-family: "ff-tisa-sans-web-pro";
-	text-align: center;
 }
 
 .featureBlock h4 {margin-bottom: 0; color: #f6ea32;	
@@ -244,48 +246,34 @@ border-bottom-left-radius: 6px;
 	-moz-box-sizing: border-box;
 }
 
-.issueLanding .tagline {color: #92201d; background-color: #ddd}
-.home .tagline {color: #eee;}
+
 .tertLinks {
 	float: right;
 	line-height: 40px;
-/* 	width: 190px; */
 }
-
-/*
-.search {
-    float: right;
-    height: 45px;
-    padding:0 15px 0 15px;
-    width: 225px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-*/
 
 .search {
     width: 178px;
+    padding-top: 20px;
 } 
 
 input[type="search"] {
 	-webkit-appearance: textfield;
 	border: none;
 	padding: 0px 2px;
-/* 	width: 148px; */
 	width: 178px;
-/* 	margin-top: 8px; */
 	background-color: #fff;
 	border-radius: 6px;
 	background: #fff;
     height:40px;
-/*     float: left; */
+    float: left;
     margin-top: 5px\9;
      box-sizing: border-box;
     -moz-box-sizing: border-box;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
     font-size: 14px;
     text-align: left;
+    padding-right: 38px;
 }
 
 .search .button {
@@ -293,27 +281,17 @@ input[type="search"] {
 }
 
 .search .btn-icon {
-	background-image: url(/images/search_icon.png)
+	background-image: url(/images/search_icon.png);
+	float: left;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: 5px;
+    padding-left: 20px;
+    text-indent: -999px;
 }
 
 .signin .btn-icon {
 		background-image: url(/images/login_icon.png)
-}
-
-.search-btn {
-/*
-	height: 30px;
-	width: 30px;
-	background: url(/images/search_icon.png) no-repeat center center #0657af;
-	border: 0;
-	text-indent: -9999px;
-	border-top-right-radius: 6px;
-	border-bottom-right-radius: 6px;
-	padding: 8px 0;
-	float: left;
-	margin-top: 8px;
-	margin-top: 5px\9;
-*/
 }
 
 input[type="submit"] {
@@ -347,18 +325,6 @@ background-color: #eee;
   float: left;
 }
 
-/*
-.switcher nav li a:first-child {
-	border-bottom-left-radius: 6px;
-	border-top-left-radius: 6px;
-}
-
-.switcher nav li a:last-child {
-	border-bottom-right-radius: 6px;
-	border-top-right-radius: 6px;
-}
-*/
-
 .switcher nav a{
   display: block;
   text-decoration: none;
@@ -368,26 +334,6 @@ background-color: #eee;
   background-color: #478eda;
   color: white
 }
-/*
-
-.switcher #wrap {
-  position:relative;
-  margin:0 auto;
-}
-.switcher #wrap section {
-  position:absolute;
-  width:100%;
-  opacity:0;
-  -webkit-transition:opacity .4s linear;
-  -moz-transition:opacity .4s linear;
-  -o-transition:opacity .4s linear;
-}
-.switcher #wrap section:target {
-  opacity:1;
-  z-index:1;
-}
-*/
-
 
 #views h4{
 	background: url(/images/icon-eye.png) no-repeat left center;
@@ -480,6 +426,18 @@ border-bottom: 1px dashed #ddd;
 	margin-bottom: 20px;
 }
 
+.home .optionalAd {background: #025aa7;font-size: 28px}
+.optionalAd .double {color: white; border: 0;margin: 0;padding: 40px}
+.optionalAd .double:before, .optionalAd .double:after {background-color: #FFFFFF;
+    color: #478EDA;
+ margin-left: 0px;width: 60px; height: 60px; font-size: 90px; line-height: 110px}
+.optionalAd .double:before {left: -30px;
+    top: 100px;}
+.optionalAd .double:after {     margin-left: 370px;
+    right: 0;
+    top: 100px;}
+.optionalAd .double cite {color: #f6ea32}
+.optionalAd cite a {color: #f6ea32}
 .curated .articles li {
 	padding-top: 0;
 	-moz-box-sizing: border-box;
@@ -570,15 +528,12 @@ footer .slug {
 	color: #478eda;	
 }
 
-.home .hero .author {
-	font-family: "ff-tisa-sans-web-pro"; color: #eee; font-size: 14px;
-}
 
 
 .slug { font-family: "ff-tisa-sans-web-pro", sans-serif;
 }
 
-.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.hero-vert .slug, .hero-vert h1 span, .hero-vert .author, .hero-vert h2 span, .home .hero h2 span, .home .hero .slug, .home .hero .author{
+.articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.home .hero h2 span, .home .hero .slug, .home .hero .author{
 	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
@@ -602,12 +557,15 @@ footer .slug {
     padding: 5px 20px;
 }
 
+.hero-vert .slug,.hero-vert .author, .hero-vert h1 {
+	padding: 5px 30px;
+}
 
 .hero p {font-family: "ff-tisa-sans-web-pro", sans-serif; color: white;
 }
 
 .articleDetail .hero .slug, .home .hero .slug {
-    top: 188px;
+    top: 216px;
 }
 .hero-vert .slug {
    left: 381px;
@@ -618,31 +576,32 @@ footer .slug {
 	position: absolute; 
 	left: 0; 
 	width: 100%; 
-	top: 240px;
+	top: 250px;
 	color: #f6ea32;
 	font-size: 42px;
 	font-family: "ff-tisa-web-pro";
 }
 
-.home .hero h2 {top:223px}
+.home .hero h2 {top:280px; margin: 0;}
+.home-horz .hero h2 span {padding: 5px 20px 8px}
 .hero-vert h1, .hero-vert h2{
- color: #F6EA32;
+ 	color: #F6EA32;
     left: 381px;
     position: absolute;
-    top: 78px;
+    top: 40px;
     z-index: 9999;
-    font-size:36px;}
+    line-height: 48px;}
     
 
  .hero-vert h2 {top: 78px;}    
- .home .hero-vert .slug {top: 39px;}
+ .home .hero-vert .slug {top: 29px;}
  .home .hero-vert h2 {top: 43px; line-height: 36px}
- .home .hero-vert .author {top: 165px;}
+ .home .hero-vert .author {top: 155px;}
  .hero-vert h2 a {color: #F6EA32; font-size: 35px;font-family: "ff-tisa-web-pro";}
   .hero-vert h2 a:hover {color: #478eda}
   .hero-vert h2 span{padding: 20px;}
   .vert .lead {padding-left: 0; padding-top: 5px;}
-  .home .vert .lead {padding-top: 0}
+  .home .vert .lead {padding-top: 0; border: 0}
 h1.span {
 	height: 48px;
 }
@@ -655,7 +614,9 @@ h1.span {
 	font-family: "ff-tisa-sans-web-pro";
 	left: 0;
 }
-.home .hero .author {top:319px}
+.home .hero .author {
+	top:339px
+}
 
 .hero-vert .author{
   border-bottom-right-radius: 6px;
@@ -663,13 +624,13 @@ h1.span {
     font-family: "ff-tisa-sans-web-pro";
     left: 381px;
     position: absolute;
-    top: 158px;
+    top: 178px;
     z-index: 9999;}
     .home .vert {padding:230px 30px 0px}
-    .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; border-top: 1px dashed #777}
+    .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; }
 /*     .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px} */
     
-    .home .vert h3, .home .lead h3 {  border-top: 1px dashed #777777;
+    .home .vert h3, .home .lead h3 {
     color: #478EDA;
     margin-bottom: 0;
     margin-top: 40px;
@@ -682,12 +643,21 @@ h1.span {
     }
     .home .hero-related {
 	    	    margin-bottom: 0;
+	    	    background-color: #404040;
     }
-    .home .hero-related li {
-	    float: left;
-	    margin-right: 20px;
+    .home-horz .lead h3{}
 
+
+        .home .hero-related li {width: 33%; -moz-box-sizing: border-box; box-sizing: border-box;  padding: 0 10px 0 0; margin-right: 0;float: left}
+        
+            .home .vert .hero-related li {
+	    float: left;
+	    text-align: left;
+	     width: 100%;
+	     padding: 0
     }
+    
+    .home  .hero-related li a:hover {color: white}
 .articleDetail .hero .sans .slug {top: 208px;}
 
 .articleDetail .hero .sans h1 {margin-top: 0;top:274px;}
@@ -776,7 +746,7 @@ h1 span.spacer {
 .hero-issue header {
 	text-align: center;
 	padding: 40px 0 0px;
-	border-bottom: 1px dashed #777;
+	border-bottom: 1px dashed #555;
 }
 .hero-issue .slug{
 color: white;
@@ -789,7 +759,6 @@ margin-left: 20px;
 }
 .hero-issue img.cover {float: left; width: 40%; margin: 30px 5% 0; border: 5px solid #333; box-sizing: border-box; -moz-box-sizing: border-box;}
 
-.issue-contents li img {border-color: #ddd;}
 
 .hero-vert img {
 	float: left;
@@ -800,12 +769,15 @@ margin-left: 20px;
 	margin-bottom: 30px;
 }   
 
+.home .rotator {margin-bottom: 0}
 .rotator .slide {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 30px 50px;
-	height: 321px
+	height: 321px;
 }
+
+.home-horz .rotator .slide {	background:url("/images/blockquote_bg.jpg") repeat scroll 0 0 #EEEEEE;}
    
 .slide .content {
 	float: left;
@@ -842,7 +814,7 @@ margin-left: 20px;
 .home .rotator .next {
 	right: -30px;
 }
-.slide .content a {margin-right: 10px;}
+/* .slide .content a {margin-right: 10px;} */
 .slide img {
 	float: right;
 	border: 10px solid white;
@@ -853,7 +825,8 @@ margin-left: 20px;
     font-family: "ff-tisa-sans-web-pro";
     font-size: 18px;
     line-height: 32px;
-    margin-top: 1px;
+    margin-top: 0px;
+     border-top: 1px dashed #555555;
     padding: 20px;
     position: relative;
     border-bottom-left-radius: 6px;
@@ -861,12 +834,36 @@ margin-left: 20px;
 	color: #eee;
 	}
 
+.lead p {
+	margin-top: 0;
+	float: left;
+	width: 65%;
+}
 
+.home-horz .hero-related {
+	float: left;
+	width: 35%;
+	margin-top: 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box
+}
+
+.home-horz .hero-related h3{
+	margin-top: 0;
+	padding-top: 5px;
+
+}
+
+.home-horz .hero-related li {
+	width: 100%;
+	padding: 5px 0 0;
+}
 .vert {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     border-bottom-left-radius: 0;
-    border-left: 1px dashed #777777;
+    border-left: 1px dashed #555;
     float: left;
     height: 570px;
     margin-top: 0;
@@ -912,7 +909,7 @@ margin-left: 20px;
 .issueLanding .hero-vert img {
 	width: 380px;
 }
-/* .articleDetail .lead:before, .home .hero div:before, */ .app_promo:before, .featureBlock:before {
+/* .articleDetail .lead:before, .home .hero div:before, */ .app_promo:before, .featureBlock:before, .home-vert .optionalAd:before {
    content:"";
    position:absolute;
    top:0;
@@ -956,6 +953,9 @@ margin-left: 20px;
 padding-bottom: 5px
 }
 
+.sidebar h3 {
+	font-size: 18px;
+}
 .sidebar h4 {
 	margin-bottom: 5px;
 	font-size: 13px;
@@ -1026,7 +1026,7 @@ h1.logo{
 
 h2 {font-size: 24px; line-height: 32px; color: #0657af;font-family: "ff-tisa-sans-web-pro"}
 
-h3 {font-size: 18px; line-height: 24px; color: #404040}
+h3 {font-size: 21px; line-height: 24px; color: #404040}
 
 h3 a {color:#0657af;font-family: "ff-tisa-sans-web-pro";}
 
@@ -1112,6 +1112,13 @@ blockquote.double {
 blockquote.double cite { color: #404040;
     display: block;
     font-style: normal;font-size: 21px; margin: 10px 0;}
+    .slide blockquote cite {color: #478EDA;
+    font-size: 16px;
+    margin: 20px 0;
+}
+    .slide blockquote cite a {
+	    color: #0657AF;
+    }
 blockquote:after, blockquote.double:before {
   	background: none repeat scroll 0 0 #0657AF;
     border-radius: 50% 50% 50% 50%;
@@ -1142,7 +1149,7 @@ blockquote.double:after {    left: 360px;
     color: white;
     font-size: 18px;
     line-height: 32px;
-    padding-top: 5px;
+    padding-top: 35px;
     text-align: center;
 }
 
@@ -1169,25 +1176,25 @@ blockquote.double:after {    left: 360px;
 }
 */
 .featureBlock blockquote:after, .featureBlock blockquote:before {
-    font-size: 100px;
-    height: 60px;
-    line-height: 115px;
-    margin-left: 125px;
-    margin-top: 150px;
-    top: 20px;
-    width: 60px;
+    font-family: Georgia;
+    font-size: 80px;
+    font-style: normal;
+    height: 50px;
+    left: 0;
+    line-height: 92px;
+    margin-left: 130px;
+    margin-top: 160px;
     position: absolute;
     text-align: center;
-    left: 0;
-    font-family: Georgia;
-    font-style: normal;
+    top: 40px;
+    width: 50px;
     background: none repeat scroll 0 0 #0657AF;
     border-radius: 50% 50% 50% 50%;
     color: #F6EA32;
     content: "\201D";
     }
     
-.featureBlock blockquote:before {top: -230px;    content: "\201C";
+.featureBlock blockquote:before {top: -190px;    content: "\201C";
 }
 
 .featureBlock cite {
@@ -1198,22 +1205,19 @@ blockquote.double:after {    left: 360px;
     padding: 10px 0;
 }
 .slide blockquote {
+   -moz-box-sizing: border-box;
     border: 0 none;
-    margin: 20px 0 0;
-    padding: 10px 115px;
-    width: 430px;
-    color: #404040
+    color: #404040;
+    margin: 0;
+    padding: 45px 60px 0;
+    width: 100%;
+    box-sizing: border-box;font-size: 28px;
 }
 
-.slide blockquote.double:before {   background-color: #4590D4;
-    color: #4590D4;
-    margin-left: -350px;
-    top: 35px;color:#F6EA32}
-.slide blockquote.double:after {     background-color: #4590D4;
-    color: #4590D4;
-  margin-left: 210px;
-    top: 35px;color:#F6EA32}
-    
+.slide blockquote:before,.slide blockquote:after {
+	display: none;
+}
+
     .home-horz .slide .content h2 {text-align: center; margin-top: 20px; color:#F6EA32
     }
     .home-horz .slide .content h2 a {color: #0657AF}
@@ -1255,7 +1259,7 @@ blockquote.double:after {    left: 360px;
 	box-sizing: border-box;
 	margin: 20px 0;
 }
-.issue-contents li {width: 100%; margin: 0 0 30px;	padding: 0 30px 0 20px;
+.issue-contents li {width: 100%; margin: 0 0 20px;	padding: 0 30px 0 20px;
 }
 .issue-contents li img,.ls-contents li img{
 	float: left;
@@ -1267,7 +1271,7 @@ blockquote.double:after {    left: 360px;
 .issue-contents li img {
 	width: 80px;
 	height: 60px;
-	border-color: #ddd;
+	border-color: #333;
 }
 .ls-contents h2 {
 	padding-top: 30px;
@@ -1275,16 +1279,20 @@ blockquote.double:after {    left: 360px;
     color: #404040;
     border-color: #ddd;
 }
-.issue-contents h3, .issue-contents h3 a,.ls-contents h3, .ls-contents h3 a, .issue-contents a{
+.issue-contents li h3, .issue-contents h3 a,.ls-contents h3, .ls-contents h3 a, .issue-contents a{
 	margin: 0;
 	color: #0657AF;
 	font-size: 16px;
 }
-.issue-contents h3, .issue-contents h3 a,.issue-contents a{
+.issue-contents li h3, .issue-contents h3 a,.issue-contents a{
 	color: #F6EA32;
-	
 }
 
+.issue-contents h3 {
+	padding: 0 20px;
+	color: #4590D4;
+	margin: 0 0 20px;
+}
 .issue-contents a {
 	display: block;
 	margin-bottom: 0;
