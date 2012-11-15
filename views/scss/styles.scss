@@ -1016,6 +1016,9 @@ padding-bottom: 5px
 	width: 100%;
 }
 
+.index .footerWrap {
+	display: none;
+}
 .footer p{
 	color: #fff;
 	font-size: 13px;
@@ -1602,3 +1605,11 @@ header .signin {
 *:first-child+html .clearfix {min-height: 1px;}
 
 .lt-ie9 .search input {height: 35px;}
+
+.index {margin-top: 100px;}
+.index h1 {line-height: 50px;}
+.index dd {  margin: 0;
+    padding: 0 0 20px;}
+.index dl {margin-top: 30px;}
+.index dt {   border-top: 1px dashed #EEEEEE;
+    padding: 20px 0 0;}

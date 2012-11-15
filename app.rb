@@ -22,7 +22,7 @@ class App < Sinatra::Base
   end
 
  get "/" do
-    erb :index
+    erb :index2
   end
   
   get "/issue" do
@@ -33,8 +33,8 @@ class App < Sinatra::Base
     erb :home
   end
   
-      get "/article-sans" do
-    erb :articlesans
+      get "/article" do
+    erb :index
   end
   
       get "/article-vert" do
