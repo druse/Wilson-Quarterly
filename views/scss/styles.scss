@@ -481,7 +481,7 @@ border-bottom: 1px dashed #ddd;
 
 .meta_end {border-bottom: none;}
 
-footer .slug, .read_est, .share, .commentLink {
+footer .slug, .read_est, .share, .commentLink, .meta .pdf {
 	float: left;
 	background: url(/images/readtime.png) no-repeat 5px center;
 	font-size: 12px;
@@ -500,12 +500,18 @@ footer .slug, .read_est, .share, .commentLink {
 	margin-left: 10px;
 }
 
-.commentLink {
+.commentLink, .meta .pdf {
 	background-image: url(/images/icon-comments.png);
 	margin-left: 10px;
 	padding: 7px 8px 7px 30px;
 	float: right
 }
+
+.meta .pdf {
+	background-image: url(/images/icon-pdf.png);
+	float: left;
+}
+
 .print, .rss { background: url("/images/print.png") no-repeat scroll 0 0 transparent;
     display: inline-block;
     height: 16px;
@@ -1208,10 +1214,10 @@ blockquote.side {
 
 
 blockquote.side:after {
-     left: 220px;    top: 106%;
+     left: 220px;    top: 106%; background-color: #eee;color: #404040;
 }
 
-blockquote.side:before {  left: 220px;
+blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
     top: -100px;}
 
 /*
@@ -1290,21 +1296,6 @@ blockquote.side:before {  left: 220px;
 	display: inline-block
 }
 
-.pdf, .pdf-dark {
-	background: url(/images/icon-pdf.png) no-repeat center center;
-	margin-left: 7px;
-	width: 16px;
-	height: 16px;
-	display: inline-block
-}
-
-.pdf-dark {
-		background: url(/images/icon-pdf-yellow.png) no-repeat center center;
-
-.pdf:hover {
-	background-image: url(/images/icon-pdf-hover.pdf);
-}
-}
 .article blockquote p { 
 	margin: 0;
     padding: 20px 0;
