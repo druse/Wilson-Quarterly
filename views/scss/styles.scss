@@ -106,20 +106,20 @@ textarea {
 .featureBlock:last-child {border: none;}
 
 .featureBlock h3 {
-	color: #0657af;
+	color: #eee;
 	margin-top: 0;
 	font-family: "ff-tisa-sans-web-pro";
 }
 
-.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	
+.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	font-size: 18px;
 }
 .featureBlock h4 a {color: #f6ea32;font-family: "ff-tisa-web-pro"
 }
 .featureBlock h4 a:hover {color: #fff}
 .featureBlock .author {
-	font-size: 12px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
+	font-size: 14px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
 }
-
+.featureBlock p {}
 .featureBlock a {color:#fff }
 .featureBlock a:hover {color: #f6ea32;}
 .authorSpot {
@@ -379,6 +379,7 @@ background-color: #eee;
 
 .toc header p {
 	margin-top: 0;
+	font-size: 18px;
 }
 .inEssence {
 	margin-right: 10%;
@@ -539,6 +540,7 @@ footer .slug {
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .home .hero-vert h2,.home .hero-vert .slug, .home .hero-vert .author {
@@ -573,7 +575,7 @@ footer .slug {
     top: 37px;
     z-index: 9999;
 }
-.articleDetail .hero h1, .home .hero h2 {
+.articleDetail .hero h1, .home .hero h2, .block h2 a {
 	position: absolute; 
 	left: 0; 
 	width: 100%; 
@@ -593,6 +595,19 @@ footer .slug {
     z-index: 9999;
     line-height: 48px;}
     
+.home-horz .hero .block {
+	background: rgb(0, 0, 0);
+	background: rgba(0,0,0, .8);
+	padding: 10px 30px 15px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: absolute;
+	z-index: 1;
+	top: 250px;
+	border-top-right-radius: 6px
+}
+
+
 
  .hero-vert h2 {top: 78px;}    
  .home .hero-vert .slug {top: 29px;}
@@ -850,16 +865,17 @@ margin-left: 20px;
 	-moz-box-sizing: border-box
 }
 
-.home-horz .hero-related h3{
+.home-horz .hero-related h3 {
 	margin-top: 0;
-	padding-top: 5px;
+	padding: 5px 0;
 
 }
 
 .home-horz .hero-related li {
 	width: 100%;
-	padding: 5px 0 0;
-}
+ line-height: 32px;
+ }
+
 .vert {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -874,7 +890,30 @@ margin-left: 20px;
     background-color: #404040;
 }
 
+.home-horz .hero .block h2,.home-horz .hero .block h2 a,.home-horz .hero .block h2 span, .home-horz .hero .block .slug,.home-horz .hero .block .author, .articleDetail div.lead .slug, .articleDetail div.lead h2, .articleDetail div.lead .author{
+	position: relative;
+	top: 0;
+	background: none;
+	padding-left: 0
+}
 
+.articleDetail div.lead {margin-bottom: 20px}
+div.lead .slug {color: #fff; font-size: 12px; text-transform: uppercase;}
+
+div.lead h1 { color: #F6EA32;
+    font-family: "ff-tisa-web-pro";
+    margin: 10px 0 15px;}
+
+div.lead .author {color: #478EDA;}
+.articleDetail div.lead p{
+	width: 100%;
+	float: none;
+	margin-top: 20px;
+}
+
+.home-horz .hero .block h2 {
+	margin: 10px 0 15px;
+}
 .issueLanding .hero-vert {
 	float: right;
 	width: 50%;
@@ -1154,7 +1193,6 @@ blockquote.double:after {    left: 360px;
     line-height: 32px;
     padding-top: 35px;
     text-align: center;
-    color: #0657AF;
 }
 
 blockquote.side {
@@ -1164,8 +1202,10 @@ blockquote.side {
     margin-top: 10px;
     padding: 10px 0;
     width: 178px;
-    text-align: right
+    text-align: right;
 }
+
+
 
 blockquote.side:after {
      left: 220px;    top: 106%;
@@ -1309,7 +1349,7 @@ blockquote.side:before {  left: 220px;
 }
 .ls-contents h2 {
 	padding-top: 30px;
-	margin: 0px 0 10px 20px;
+	margin: 0px 0 0px 20px;
     color: #404040;
     border-color: #ddd;
 }
