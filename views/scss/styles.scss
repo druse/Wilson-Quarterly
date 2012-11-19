@@ -969,16 +969,17 @@ div.lead .author {color: $secondary_blue;}
 padding-bottom: 5px
 }
 
-.sidebar h3 {
+.sidebar h3, .sidebar-h3 {
 	font-size: 18px;
 }
-.sidebar h4 {
+.sidebar h4, .sidebar-h4 {
 	margin-bottom: 5px;
 	font-size: 13px;
-	line-height: 19px
+	line-height: 19px;
+  font-weight: bold;
 }
 
-.sidebar p {margin-top: 0;}
+.sidebar p, .sidebar-p {margin-top: 0;}
 
 
 .footerWrap {
