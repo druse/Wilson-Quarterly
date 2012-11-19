@@ -7,6 +7,8 @@ Highlight Yellow: #f6ea32;
 Grey: #404040;
 */
 
+$image_path: '' !default;
+
 /* Styles */
 body {
 	margin: 0 auto;
@@ -15,7 +17,7 @@ body {
 	color: #404040;
 	font-size: 16px;
 	line-height: 30px;
-	background: url("/images/bg_pattern.jpg") repeat scroll 0 0 transparent
+	background: url("#{$image_path}/images/bg_pattern.jpg") repeat scroll 0 0 transparent
 }
 
 a {text-decoration: none}
@@ -106,20 +108,20 @@ textarea {
 .featureBlock:last-child {border: none;}
 
 .featureBlock h3 {
-	color: #0657af;
+	color: #eee;
 	margin-top: 0;
 	font-family: "ff-tisa-sans-web-pro";
 }
 
-.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	
+.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	font-size: 18px;
 }
 .featureBlock h4 a {color: #f6ea32;font-family: "ff-tisa-web-pro"
 }
 .featureBlock h4 a:hover {color: #fff}
 .featureBlock .author {
-	font-size: 12px;font-family: "ff-tisa-sans-web-pro";  color: #404040	
+	font-size: 14px;font-family: "ff-tisa-sans-web-pro";  color: #404040
 }
-
+.featureBlock p {}
 .featureBlock a {color:#fff }
 .featureBlock a:hover {color: #f6ea32;}
 .authorSpot {
@@ -140,7 +142,7 @@ textarea {
 
 
 .app_promo {
-	background: url(/images/app_promo.png) center 150px no-repeat #404040;
+	background: url("#{$image_path}/images/app_promo.png") center 150px no-repeat #404040;
 	padding: 10px 10px 120px 10px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -157,7 +159,7 @@ textarea {
 .currentIssue img {
 border: 1px solid #478EDA;
 	}
-	
+
 .currentIssue img:hover {
 	border-color: #f6ea32
 }
@@ -174,16 +176,16 @@ border: 1px solid #478EDA;
 	margin-left: 30px;
 }
 
-.bar {	
+.bar {
 	height: 45px;
 	margin-bottom: 20px;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	 background-color: #eee;
-    
+
 }
 
-.home .bar {	
+.home .bar {
 
 }
 
@@ -210,8 +212,8 @@ border: 1px solid #478EDA;
 .home .login {position: relative;}
 
 .home .login a {}
-.login a {background: url(/images/login_icon.png) no-repeat 10px center rgba(0,0,0,.8); 
-border-bottom-right-radius: 6px; 
+.login a {background: url("#{$image_path}/images/login_icon.png") no-repeat 10px center rgba(0,0,0,.8);
+border-bottom-right-radius: 6px;
 border-bottom-left-radius: 6px;
 	text-decoration: none;
     text-transform: uppercase;
@@ -224,7 +226,7 @@ border-bottom-left-radius: 6px;
     font-size: 13px;
 }
 
-.account {background: url(/images/account_icon.png) no-repeat 10px center;}
+.account {background: url("#{$image_path}/images/account_icon.png") no-repeat 10px center;}
 
 .login a:hover {
 	color: #fff;
@@ -237,7 +239,7 @@ border-bottom-left-radius: 6px;
 	text-transform: uppercase;
 	font-family: "ff-tisa-sans-web-pro";
 	color: #f6ea32;
-	background: url(/images/tagline-bg.png) no-repeat center top #404040;
+	background: url("#{$image_path}/images/tagline-bg.png") no-repeat center top #404040;
 	width: 178px;
 	text-align: center;
 	line-height: 21px;
@@ -256,7 +258,7 @@ border-bottom-left-radius: 6px;
 .search {
     width: 178px;
     padding-top: 20px;
-} 
+}
 
 input[type="search"] {
 	-webkit-appearance: textfield;
@@ -282,7 +284,7 @@ input[type="search"] {
 }
 
 .search .btn-icon {
-	background-image: url(/images/search_icon.png);
+	background-image: url("#{$image_path}/images/search_icon.png");
 	float: left;
     height: 30px;
     margin-left: -40px;
@@ -292,7 +294,7 @@ input[type="search"] {
 }
 
 .signin .btn-icon {
-		background-image: url(/images/login_icon.png)
+		background-image: url("#{$image_path}/images/login_icon.png")
 }
 
 input[type="submit"] {
@@ -308,7 +310,7 @@ input[type="submit"] {
 .popular section {
 	width: 50%;
 	float: left;
-background-color: #eee;	
+background-color: #eee;
 	padding: 15px 20px;
 	-moz-box-sizing:border-box;
 	box-sizing: border-box;
@@ -337,22 +339,22 @@ background-color: #eee;
 }
 
 #views h4{
-	background: url(/images/icon-eye.png) no-repeat left center;
+	background: url("#{$image_path}/images/icon-eye.png") no-repeat left center;
 	padding-left: 30px
 }
 
 #comments h4 {
-		background: url(/images/icon-comments.png) no-repeat left center;
+		background: url("#{$image_path}/images/icon-comments.png") no-repeat left center;
 			padding-left: 30px
 }
 
 .icon-inessence {
-			background: url(/images/icon-inessence.png) no-repeat left 5px;
+			background: url("#{$image_path}/images/icon-inessence.png") no-repeat left 5px;
 			padding-left: 30px
 }
 
 .icon-book {
-			background: url(/images/icon-book.png) no-repeat left 5px;
+			background: url("#{$image_path}/images/icon-book.png") no-repeat left 5px;
 			padding-left: 30px
 }
 
@@ -379,6 +381,7 @@ background-color: #eee;
 
 .toc header p {
 	margin-top: 0;
+	font-size: 18px;
 }
 .inEssence {
 	margin-right: 10%;
@@ -480,9 +483,9 @@ border-bottom: 1px dashed #ddd;
 
 .meta_end {border-bottom: none;}
 
-footer .slug, .read_est, .share, .commentLink {
+footer .slug, .read_est, .share, .commentLink, .meta .pdf {
 	float: left;
-	background: url(/images/readtime.png) no-repeat 5px center;
+	background: url("#{$image_path}/images/readtime.png") no-repeat 5px center;
 	font-size: 12px;
 	display: inline-block;
 	padding: 5px 8px;
@@ -495,17 +498,23 @@ footer .slug, .read_est, .share, .commentLink {
 .share {
     float: right;
     position: relative;
-    background-image: url(/images/share_icon.png);
+    background-image: url("#{$image_path}/images/share_icon.png");
 	margin-left: 10px;
 }
 
-.commentLink {
-	background-image: url(/images/icon-comments.png);
+.commentLink, .meta .pdf {
+	background-image: url("#{$image_path}/images/icon-comments.png");
 	margin-left: 10px;
 	padding: 7px 8px 7px 30px;
 	float: right
 }
-.print, .rss { background: url("/images/print.png") no-repeat scroll 0 0 transparent;
+
+.meta .pdf {
+	background-image: url("#{$image_path}/images/icon-pdf.png");
+	float: left;
+}
+
+.print, .rss { background: url("#{$image_path}/images/print.png") no-repeat scroll 0 0 transparent;
     display: inline-block;
     height: 16px;
     line-height: 16px;
@@ -514,7 +523,7 @@ footer .slug, .read_est, .share, .commentLink {
     top: 3px;
     width: 16px;}
 
-.rss {background-image: url(/images/rss.png);}
+.rss {background-image: url("#{$image_path}/images/rss.png");}
 
 .read_est {
 	float: left;
@@ -522,11 +531,11 @@ footer .slug, .read_est, .share, .commentLink {
 }
 
 footer .slug {
-	background-image: url(/images/slug_icon.png);
+	background-image: url("#{$image_path}/images/slug_icon.png");
 }
 
 .slug:hover {
-	color: #478eda;	
+	color: #478eda;
 }
 
 
@@ -539,6 +548,7 @@ footer .slug {
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .home .hero-vert h2,.home .hero-vert .slug, .home .hero-vert .author {
@@ -573,10 +583,10 @@ footer .slug {
     top: 37px;
     z-index: 9999;
 }
-.articleDetail .hero h1, .home .hero h2 {
-	position: absolute; 
-	left: 0; 
-	width: 100%; 
+.articleDetail .hero h1, .home .hero h2, .block h2 a {
+	position: absolute;
+	left: 0;
+	width: 100%;
 	top: 250px;
 	color: #f6ea32;
 	font-size: 42px;
@@ -592,9 +602,22 @@ footer .slug {
     top: 40px;
     z-index: 9999;
     line-height: 48px;}
-    
 
- .hero-vert h2 {top: 78px;}    
+.home-horz .hero .block {
+	background: rgb(0, 0, 0);
+	background: rgba(0,0,0, .8);
+	padding: 10px 30px 15px 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: absolute;
+	z-index: 1;
+	top: 250px;
+	border-top-right-radius: 6px
+}
+
+
+
+ .hero-vert h2 {top: 78px;}
  .home .hero-vert .slug {top: 29px;}
  .home .hero-vert h2 {top: 43px; line-height: 36px}
  .home .hero-vert .author {top: 155px;}
@@ -608,7 +631,7 @@ h1.span {
 }
 
 .articleDetail .hero .author, .home .hero .author {
-	position: absolute; 
+	position: absolute;
 	top: 328px;
 	color: #478eda;
 	border-bottom-right-radius: 6px;
@@ -630,7 +653,7 @@ h1.span {
     .home .vert {padding:230px 30px 0px}
     .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; }
 /*     .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px} */
-    
+
     .home .vert h3, .home .lead h3 {
     color: #478EDA;
     margin-bottom: 0;
@@ -650,14 +673,14 @@ h1.span {
 
 
         .home .hero-related li {width: 33%; -moz-box-sizing: border-box; box-sizing: border-box;  padding: 0 10px 0 0; margin-right: 0;float: left}
-        
+
             .home .vert .hero-related li {
 	    float: left;
 	    text-align: left;
 	     width: 100%;
 	     padding: 0
     }
-    
+
     .home  .hero-related li a:hover {color: white}
 .articleDetail .hero .sans .slug {top: 208px;}
 
@@ -675,7 +698,7 @@ h1 span.spacer {
 }
 
 .articleDetail .hero, .home .hero{
-	position: relative; 
+	position: relative;
 	width: 100%;
 	height: 400px;
 }
@@ -732,7 +755,7 @@ h1 span.spacer {
 	display: block;
 	text-align: center;
 	margin-top: 0px;
-	
+
 }
 .issueLanding .hero .slug {    color: #4590D4;
     display: block;
@@ -768,7 +791,7 @@ margin-left: 20px;
 .rotator {
 	background: #eee;
 	margin-bottom: 30px;
-}   
+}
 
 .home .rotator {margin-bottom: 0}
 .rotator .slide {
@@ -778,8 +801,8 @@ margin-left: 20px;
 	height: 321px;
 }
 
-.home-horz .rotator .slide {	background:url("/images/blockquote_bg.jpg") repeat scroll 0 0 #EEEEEE;}
-   
+.home-horz .rotator .slide {	background:url("#{$image_path}/images/blockquote_bg.jpg") repeat scroll 0 0 #EEEEEE;}
+
 .slide .content {
 	float: left;
 	width: 300px;
@@ -798,7 +821,7 @@ margin-left: 20px;
 	color: #404040;
 	 line-height: 18px;
 	 margin-bottom: 10px;}
-	 
+
 .slide .slug {
 	background-color: #ddd;
 }
@@ -820,7 +843,7 @@ margin-left: 20px;
 	float: right;
 	border: 10px solid white;
 }
-   
+
 .lead {
  	background-color: #404040;
     font-family: "ff-tisa-sans-web-pro";
@@ -850,16 +873,17 @@ margin-left: 20px;
 	-moz-box-sizing: border-box
 }
 
-.home-horz .hero-related h3{
+.home-horz .hero-related h3 {
 	margin-top: 0;
-	padding-top: 5px;
+	padding: 5px 0;
 
 }
 
 .home-horz .hero-related li {
 	width: 100%;
-	padding: 5px 0 0;
-}
+ line-height: 32px;
+ }
+
 .vert {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -874,7 +898,30 @@ margin-left: 20px;
     background-color: #404040;
 }
 
+.home-horz .hero .block h2,.home-horz .hero .block h2 a,.home-horz .hero .block h2 span, .home-horz .hero .block .slug,.home-horz .hero .block .author, .articleDetail div.lead .slug, .articleDetail div.lead h2, .articleDetail div.lead .author{
+	position: relative;
+	top: 0;
+	background: none;
+	padding-left: 0
+}
 
+.articleDetail div.lead {margin-bottom: 20px}
+div.lead .slug {color: #fff; font-size: 12px; text-transform: uppercase;}
+
+div.lead h1 { color: #F6EA32;
+    font-family: "ff-tisa-web-pro";
+    margin: 10px 0 15px;}
+
+div.lead .author {color: #478EDA;}
+.articleDetail div.lead p{
+	width: 100%;
+	float: none;
+	margin-top: 20px;
+}
+
+.home-horz .hero .block h2 {
+	margin: 10px 0 15px;
+}
 .issueLanding .hero-vert {
 	float: right;
 	width: 50%;
@@ -921,10 +968,10 @@ margin-left: 20px;
 }
 
 .article > p:first-child:first-letter {
-	font-size: 50px; 
-	float: left; 
-	margin: 20px 10px 0 0; 
-	line-height: 0.4; 
+	font-size: 50px;
+	float: left;
+	margin: 20px 10px 0 0;
+	line-height: 0.4;
 	color: #0657af;
 }
 
@@ -933,14 +980,14 @@ margin-left: 20px;
     font-size: 50px;
     font-weight: bold;
     padding-right: 5px;
-    
+
 }
 .sidebar {
 	font-size: 12px;
 	line-height: 18px;
 }
 
-.sidebar div {
+.sidebar > div {
 	border-bottom: 1px dashed #CCCCCC;
     margin-bottom: 20px;
 }
@@ -971,6 +1018,9 @@ padding-bottom: 5px
 	width: 100%;
 }
 
+.index .footerWrap {
+	display: none;
+}
 .footer p{
 	color: #fff;
 	font-size: 13px;
@@ -987,7 +1037,7 @@ padding-bottom: 5px
 
 .social li a {
 	text-indent: -9999px;
-	background: url(/images/social.png) no-repeat;
+	background: url("#{$image_path}/images/social.png") no-repeat;
 	width: 32px;
 	height: 32px;
 	display: block;
@@ -1012,8 +1062,8 @@ h1.logo{
 	height: 285px;
 }
 
-.logo a {	
-	background: url(/images/logo_home.png) no-repeat;
+.logo a {
+	background: url("#{$image_path}/images/logo_home.png") no-repeat;
 	display: block;
     height: 285px;
     width: 178px;
@@ -1057,7 +1107,7 @@ ol > li:before {
     width: 30px;
     margin-right: 10px;
 }
-    
+
 ul li {list-style-type: none;}
 
 
@@ -1087,7 +1137,7 @@ ul li {list-style-type: none;}
 	 line-height: 21px;
 }
 
-.btn-icon {background: url(/images/sub-btn-icon.png) no-repeat 10px center #0657af; padding-left: 40px;}
+.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center #0657af; padding-left: 40px;}
 
 .button:hover, .button:active, .button-lg:hover, .button-lg:active {
 	background-color: #478eda;
@@ -1142,19 +1192,18 @@ blockquote:after, blockquote.double:before {
 }
 
 blockquote.double:before { left: 360px;
-    top: 27px;    content: "\201C"; background-color: #0657AF; 
+    top: 27px;    content: "\201C"; background-color: #0657AF;
 }
 blockquote.double:after {    left: 360px;
     top: 270px;    content: "\201D"; background-color: #0657AF; }
 
-.featureBlock blockquote {   
+.featureBlock blockquote {
     border: 0 none;
     color: white;
     font-size: 18px;
     line-height: 32px;
     padding-top: 35px;
     text-align: center;
-    color: #0657AF;
 }
 
 blockquote.side {
@@ -1164,14 +1213,16 @@ blockquote.side {
     margin-top: 10px;
     padding: 10px 0;
     width: 178px;
-    text-align: right
+    text-align: right;
 }
+
+
 
 blockquote.side:after {
-     left: 220px;    top: 106%;
+     left: 220px;    top: 106%; background-color: #eee;color: #404040;
 }
 
-blockquote.side:before {  left: 220px;
+blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
     top: -100px;}
 
 /*
@@ -1212,7 +1263,7 @@ blockquote.side:before {  left: 220px;
     color: #F6EA32;
     content: "\201D";
     }
-    
+
 .featureBlock blockquote:before {top: -190px;    content: "\201C";
 }
 
@@ -1242,7 +1293,7 @@ blockquote.side:before {  left: 220px;
     .home-horz .slide .content h2 a {color: #0657AF}
     .home-horz .slide .content {width: 100%;  }
 .premium {
-	background: url(/images/icon-premium.png) no-repeat center center;
+	background: url("#{$image_path}/images/icon-premium.png") no-repeat center center;
 	font-family: "ff-tisa-sans-web-pro", sans-serif;
 	margin-left: 7px;
 	width: 16px;
@@ -1250,22 +1301,7 @@ blockquote.side:before {  left: 220px;
 	display: inline-block
 }
 
-.pdf, .pdf-dark {
-	background: url(/images/icon-pdf.png) no-repeat center center;
-	margin-left: 7px;
-	width: 16px;
-	height: 16px;
-	display: inline-block
-}
-
-.pdf-dark {
-		background: url(/images/icon-pdf-yellow.png) no-repeat center center;
-
-.pdf:hover {
-	background-image: url(/images/icon-pdf-hover.pdf);
-}
-}
-.article blockquote p { 
+.article blockquote p {
 	margin: 0;
     padding: 20px 0;
     position: relative;}
@@ -1309,7 +1345,7 @@ blockquote.side:before {  left: 220px;
 }
 .ls-contents h2 {
 	padding-top: 30px;
-	margin: 0px 0 10px 20px;
+	margin: 0px 0 0px 20px;
     color: #404040;
     border-color: #ddd;
 }
@@ -1382,8 +1418,8 @@ height: 50px;
     width: 50px;
 }
 
-.prev {background: url(/images/prev.png)}
-.next {right: 0; background: url(/images/next.png)}
+.prev {background: url("#{$image_path}/images/prev.png")}
+.next {right: 0; background: url("#{$image_path}/images/next.png")}
 
 .prev:hover, .next:hover, .prev:active, .next:active {background-position: center bottom; cursor: pointer;}
 
@@ -1548,10 +1584,10 @@ header .signin {
     border-style: solid;
     border-color: #e5e5e5;
     background: #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg");
+    -moz-transform: rotate(45deg");
+    -ms-transform: rotate(45deg");
+    -o-transform: rotate(45deg");
 }
 
 
@@ -1565,9 +1601,19 @@ header .signin {
 	clear: both;
 	visibility: hidden;
 }
-/* IE6 */ 
+/* IE6 */
 * html .clearfix {height: 1%;}
 /* IE7 */
 *:first-child+html .clearfix {min-height: 1px;}
 
 .lt-ie9 .search input {height: 35px;}
+
+.index {margin: 60px auto;}
+.index h1 {line-height: 50px;}
+.index dd {  margin: 0;
+    padding: 0 0 20px;}
+.index dl {margin-top: 30px;}
+.index dt {   border-top: 1px dashed #EEEEEE;
+    padding: 20px 0 0;}
+    .index li {margin-bottom: 30px;}
+        .index li img {border: 1px solid #ddd;}
