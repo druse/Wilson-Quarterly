@@ -1,20 +1,31 @@
-/*
-Colors:
-
-Primary Blue: #0657af;
-Secondary Blue: #478eda;
-Highlight Yellow: #f6ea32;
-Grey: #404040;
-*/
-
+/**
+ *  Colors:
+ */
+$primary_blue: #0657af;
+$secondary_blue: #478eda;
+$highlight_yellow: #f6ea32;
+$grey_text: #404040;
+$grey_bg: #404040;
 $image_path: '' !default;
+$serif: "ff-tisa-web-pro", georgia, serif;
+$sans: "ff-tisa-sans-web-pro", Helvetica Neue, Arial, Helvetica, sans-serif;
+
+
+.high-contrast{
+  background-color: $grey_bg;
+  color: #fff;
+
+  a{
+    color: $highlight_yellow;
+  }
+}
 
 /* Styles */
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: "ff-tisa-web-pro", Helvetica Neue, Arial, Helvetica, sans-serif;
-	color: #404040;
+	font-family: $sans;
+	color: $grey_text;
 	font-size: 16px;
 	line-height: 30px;
 	background: url("#{$image_path}/images/bg_pattern.jpg") repeat scroll 0 0 transparent
@@ -60,22 +71,22 @@ textarea {
 }
 
 .mainNav a {
-	color:#0657af;
+	color: $primary_blue;
 	text-decoration: none;
 	padding: 10px 20px 10px 10px;
 	display: block;
-	font-family: "ff-tisa-sans-web-pro"
+	font-family: $sans;
 }
 
 .mainNav a:hover {
-	background-color: #478eda;
+	background-color: $secondary_blue;
 	color: #fff;
 	border-radius: 6px;
 }
 
 .mainNav ul li.active a {
-	color: #f6ea32;
-	background-color: #0657af;
+	color: $highlight_yellow;
+	background-color: $primary_blue;
 	border-radius: 6px;
 }
 
@@ -89,7 +100,7 @@ textarea {
 	font-size: 18px
 }
 .contentBlocks {
-	    background: none repeat scroll 0 0 #478EDA;
+	    background: none repeat scroll 0 0 $secondary_blue;
 	    margin-top: 50px;
 }
 
@@ -110,20 +121,21 @@ textarea {
 .featureBlock h3 {
 	color: #eee;
 	margin-top: 0;
-	font-family: "ff-tisa-sans-web-pro";
+	font-family: $sans;
 }
 
-.featureBlock h4 {margin-bottom: 0; color: #f6ea32;	font-size: 18px;
+.featureBlock h4 {margin-bottom: 0; color: $highlight_yellow;	font-size: 18px;
 }
-.featureBlock h4 a {color: #f6ea32;font-family: "ff-tisa-web-pro"
+.featureBlock h4 a {
+  color: $highlight_yellow;font-family: $serif;
 }
 .featureBlock h4 a:hover {color: #fff}
 .featureBlock .author {
-	font-size: 14px;font-family: "ff-tisa-sans-web-pro";  color: #404040
+	font-size: 14px;font-family: $sans;  color: $grey_text
 }
 .featureBlock p {}
 .featureBlock a {color:#fff }
-.featureBlock a:hover {color: #f6ea32;}
+.featureBlock a:hover {color: $highlight_yellow;}
 .authorSpot {
 	margin-top: 20px;
 }
@@ -142,7 +154,7 @@ textarea {
 
 
 .app_promo {
-	background: url("#{$image_path}/images/app_promo.png") center 150px no-repeat #404040;
+	background: url("#{$image_path}/images/app_promo.png") center 150px no-repeat $grey_bg;
 	padding: 10px 10px 120px 10px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -152,16 +164,16 @@ textarea {
 	border-bottom: 0;
 }
 
-.app_promo h3 {color: #f6ea32; margin-top: 0;}
-.app_promo p {	font-family: "ff-tisa-sans-web-pro";}
-.app_promo a {color: #478EDA};
+.app_promo h3 {color: $highlight_yellow; margin-top: 0;}
+.app_promo p {	font-family: $sans;}
+.app_promo a {color: $secondary_blue};
 
 .currentIssue img {
-border: 1px solid #478EDA;
+border: 1px solid $secondary_blue;
 	}
 
 .currentIssue img:hover {
-	border-color: #f6ea32
+	border-color: $highlight_yellow;
 }
 
 .currentIssue p, .currentIssue h4 {
@@ -174,32 +186,6 @@ border: 1px solid #478EDA;
 
 .header, .tout, .mainnav {
 	margin-left: 30px;
-}
-
-.bar {
-	height: 45px;
-	margin-bottom: 20px;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	 background-color: #eee;
-
-}
-
-.home .bar {
-
-}
-
-.bar a {
-	border-left: 1px dashed #fff;
-    color: #0657af;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 45px;
-    padding: 0 10px;
-    text-indent: 20px;
-    float: right;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 .login {
@@ -237,9 +223,9 @@ border-bottom-left-radius: 6px;
 	margin: 0;
 	position: relative;
 	text-transform: uppercase;
-	font-family: "ff-tisa-sans-web-pro";
-	color: #f6ea32;
-	background: url("#{$image_path}/images/tagline-bg.png") no-repeat center top #404040;
+	font-family: $sans;
+	color: $highlight_yellow;
+	background: url("#{$image_path}/images/tagline-bg.png") no-repeat center top $grey_bg;
 	width: 178px;
 	text-align: center;
 	line-height: 21px;
@@ -300,10 +286,6 @@ input[type="search"] {
 input[type="submit"] {
 	border: 0;
 }
-.search-btn:hover, .search-btn:active {
-	cursor: pointer;
-	background-color: #404040;
-}
 
 .popular {margin-bottom: 30px; padding-bottom: 30px;}
 
@@ -328,16 +310,6 @@ background-color: #eee;
   float: left;
 }
 
-.switcher nav a{
-  display: block;
-  text-decoration: none;
-  color: #404040;}
-
-.switcher nav a:hover{
-  background-color: #478eda;
-  color: white
-}
-
 #views h4{
 	background: url("#{$image_path}/images/icon-eye.png") no-repeat left center;
 	padding-left: 30px
@@ -360,7 +332,7 @@ background-color: #eee;
 
 .toc h2 {
 	padding: 20px 0;
-	font-family: "ff-tisa-web-pro";
+	font-family: $serif;
 	text-align: center;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
@@ -430,18 +402,18 @@ border-bottom: 1px dashed #ddd;
 	margin-bottom: 20px;
 }
 
-.home-horz .optionalAd {background-color: #404040;}
+.home-horz .optionalAd {background-color: $grey_bg;}
 .optionalAd .double {color: white; border: 0;margin: 0;padding: 40px}
 .optionalAd .double:before, .optionalAd .double:after {background-color: #FFFFFF;
-    color: #478EDA;
+    color: $secondary_blue;
  margin-left: 0px;width: 60px; height: 60px; font-size: 90px; line-height: 110px}
 .optionalAd .double:before {left: -30px;
     top: 100px;}
 .optionalAd .double:after {     margin-left: 370px;
     right: 0;
     top: 100px;}
-.optionalAd .double cite {color: #f6ea32}
-.optionalAd cite a {color: #f6ea32}
+.optionalAd .double cite {color: $highlight_yellow}
+.optionalAd cite a {color: $highlight_yellow}
 .curated .articles li {
 	padding-top: 0;
 	-moz-box-sizing: border-box;
@@ -454,11 +426,11 @@ border-bottom: 1px dashed #ddd;
 	font-size: 14px;
 	line-height: 21px;
 }
-.articles .author, .articles .details {display: block; color: #478eda; margin: 0; color: #777; font-size: 12px;font-family: "ff-tisa-sans-web-pro"; line-height: 21px;
+.articles .author, .articles .details {display: block; color: $secondary_blue; margin: 0; color: #777; font-size: 12px;font-family: $sans; line-height: 21px;
 }
 
 .articles .author {
-	color: #478eda;
+	color: $secondary_blue;
 }
 .articles .source{
 	text-transform: uppercase; color: #777; font-size: 12px;
@@ -478,7 +450,7 @@ border-bottom: 1px dashed #ddd;
 	padding: 0 0 15px;
 	line-height: 20px;
 	border-bottom: 1px dashed #ddd;
-	font-family: "ff-tisa-sans-web-pro"
+	font-family: $sans
 }
 
 .meta_end {border-bottom: none;}
@@ -493,7 +465,7 @@ footer .slug, .read_est, .share, .commentLink, .meta .pdf {
 	background-color: #eee;
 	float: left;
 	border-radius: 6px;
-	color: #404040}
+	color: $grey_text}
 
 .share {
     float: right;
@@ -535,12 +507,12 @@ footer .slug {
 }
 
 .slug:hover {
-	color: #478eda;
+	color: $secondary_blue;
 }
 
 
 
-.slug { font-family: "ff-tisa-sans-web-pro", sans-serif;
+.slug { font-size:$sans;
 }
 
 .articleDetail .hero .slug, .articleDetail .hero h1 span, .articleDetail .hero .author,.home .hero h2 span, .home .hero .slug, .home .hero .author{
@@ -572,7 +544,7 @@ footer .slug {
 	padding: 5px 30px;
 }
 
-.hero p {font-family: "ff-tisa-sans-web-pro", sans-serif; color: white;
+.hero p {font-family: $sans; color: white;
 }
 
 .articleDetail .hero .slug, .home .hero .slug {
@@ -588,15 +560,15 @@ footer .slug {
 	left: 0;
 	width: 100%;
 	top: 250px;
-	color: #f6ea32;
+	color: $highlight_yellow;
 	font-size: 42px;
-	font-family: "ff-tisa-web-pro";
+	font-family: $serif;
 }
 
 .home .hero h2 {top:280px; margin: 0;}
 .home-horz .hero h2 span {padding: 5px 20px 8px}
 .hero-vert h1, .hero-vert h2{
- 	color: #F6EA32;
+ 	color: $highlight_yellow;
     left: 381px;
     position: absolute;
     top: 40px;
@@ -621,8 +593,8 @@ footer .slug {
  .home .hero-vert .slug {top: 29px;}
  .home .hero-vert h2 {top: 43px; line-height: 36px}
  .home .hero-vert .author {top: 155px;}
- .hero-vert h2 a {color: #F6EA32; font-size: 35px;font-family: "ff-tisa-web-pro";}
-  .hero-vert h2 a:hover {color: #478eda}
+ .hero-vert h2 a {color: $highlight_yellow; font-size: 35px;font-family: $serif;}
+  .hero-vert h2 a:hover {color: $secondary_blue}
   .hero-vert h2 span{padding: 20px;}
   .vert .lead {padding-left: 0; padding-top: 5px;}
   .home .vert .lead {padding-top: 0; border: 0}
@@ -633,9 +605,9 @@ h1.span {
 .articleDetail .hero .author, .home .hero .author {
 	position: absolute;
 	top: 328px;
-	color: #478eda;
+	color: $secondary_blue;
 	border-bottom-right-radius: 6px;
-	font-family: "ff-tisa-sans-web-pro";
+	font-family: $sans;
 	left: 0;
 }
 .home .hero .author {
@@ -644,30 +616,26 @@ h1.span {
 
 .hero-vert .author{
   border-bottom-right-radius: 6px;
-    color: #478EDA;
-    font-family: "ff-tisa-sans-web-pro";
+    color: $secondary_blue;
+    font-family: $sans;
     left: 381px;
     position: absolute;
     top: 178px;
     z-index: 9999;}
     .home .vert {padding:230px 30px 0px}
-    .vert h3 {color: #478EDA;padding-top: 10px; margin-bottom: 0; }
+    .vert h3 {color: $secondary_blue;padding-top: 10px; margin-bottom: 0; }
 /*     .home .vert h3, .home .vert p, .home .vert ul {padding-left: 30px; padding-right: 30px} */
 
     .home .vert h3, .home .lead h3 {
-    color: #478EDA;
+    color: $secondary_blue;
     margin-bottom: 0;
     margin-top: 40px;
     padding-top: 20px;}
      .home .lead h3 {margin-top: 20px}
-    .vert a, .home .lead a {color: #F6EA32 }
+    .vert a, .home .lead a {color: $highlight_yellow }
     .vert .hero-related, .home .hero-related {font-size: 14px;}
     .vert  {
 	    color: white;
-    }
-    .home .hero-related {
-	    	    margin-bottom: 0;
-	    	    background-color: #404040;
     }
     .home-horz .lead h3{}
 
@@ -707,16 +675,16 @@ h1 span.spacer {
 	 width: 380px;
 	 height: 570px;
 	 float: left;
-	 background-color: #404040;
+	 background-color: $grey_bg;
  }
 .home .hero {
-	background: #404040;
+	background: $grey_bg;
 	height:400px
 }
 .home .lead {border-radius: 0;}
 
 .issueLanding .hero {
-	background-color: #404040;
+	background-color: $grey_bg;
 	position: relative;
 }
 
@@ -746,11 +714,11 @@ h1 span.spacer {
 .issueLanding .hero p {font-size: 18px; text-align: center;padding: 0 50px; -moz-box-sizing: border-box; box-sizing: border-box;}
 
 .issueLanding h1,{
-	color:  #f6ea32;
+	color:  $highlight_yellow;
 	margin: 40px 0 30px;
 	font-size: 42px;
 	line-height: 50px;
-	 font-family: "ff-tisa-web-pro";}
+	 font-family: $serif;}
 .issueLanding h1 {
 	display: block;
 	text-align: center;
@@ -764,7 +732,7 @@ h1 span.spacer {
     padding-top: 20px;}
 
 .hero-issue {
-	background-color: #404040;
+	background-color: $grey_bg;
 }
 
 .hero-issue header {
@@ -776,7 +744,7 @@ h1 span.spacer {
 color: white;
 }
 
-.hero-issue p {color: white; padding: 20px 80px; text-align: center;font-family: "ff-tisa-sans-web-pro"; font-size: 16px;}
+.hero-issue p {color: white; padding: 20px 80px; text-align: center;font-family: $sans; font-size: 16px;}
 
 .hero-issue a.button-lg {
 margin-left: 20px;
@@ -808,7 +776,7 @@ margin-left: 20px;
 	width: 300px;
 }
 
-.content h3, .content h2 a {color: #0657af; margin-bottom: 0;}
+.content h3, .content h2 a {color: $primary_blue; margin-bottom: 0;}
 .content a {color: #eee}
 
 .slide .content h2 {margin-top:0;}
@@ -818,7 +786,7 @@ margin-left: 20px;
 	padding: 5px 8px;
 	background-color: #eee;
 	border-radius: 6px;
-	color: #404040;
+	color: $grey_text;
 	 line-height: 18px;
 	 margin-bottom: 10px;}
 
@@ -845,8 +813,8 @@ margin-left: 20px;
 }
 
 .lead {
- 	background-color: #404040;
-    font-family: "ff-tisa-sans-web-pro";
+ 	background-color: $grey_bg;
+    font-family: $sans;
     font-size: 18px;
     line-height: 32px;
     margin-top: 0px;
@@ -895,7 +863,7 @@ margin-left: 20px;
     padding: 235px 30px 30px;
     width: 50%;
     position: relative;
-    background-color: #404040;
+    background-color: $grey_bg;
 }
 
 .home-horz .hero .block h2,.home-horz .hero .block h2 a,.home-horz .hero .block h2 span, .home-horz .hero .block .slug,.home-horz .hero .block .author, .articleDetail div.lead .slug, .articleDetail div.lead h2, .articleDetail div.lead .author{
@@ -908,11 +876,11 @@ margin-left: 20px;
 .articleDetail div.lead {margin-bottom: 20px}
 div.lead .slug {color: #fff; font-size: 12px; text-transform: uppercase;}
 
-div.lead h1 { color: #F6EA32;
-    font-family: "ff-tisa-web-pro";
+div.lead h1 { color: $highlight_yellow;
+    font-family: $serif;
     margin: 10px 0 15px;}
 
-div.lead .author {color: #478EDA;}
+div.lead .author {color: $secondary_blue;}
 .articleDetail div.lead p{
 	width: 100%;
 	float: none;
@@ -972,14 +940,14 @@ div.lead .author {color: #478EDA;}
 	float: left;
 	margin: 20px 10px 0 0;
 	line-height: 0.4;
-	color: #0657af;
+	color: $primary_blue;
 }
 
 .raised-cap {
-    color: #0657AF;
-    font-size: 50px;
-    font-weight: bold;
-    padding-right: 5px;
+  color: $primary_blue;
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 5px;
 
 }
 .sidebar {
@@ -1014,8 +982,9 @@ padding-bottom: 5px
 
 
 .footerWrap {
-	background-color: #404040;
+	background-color: $grey_bg;
 	width: 100%;
+  font-family: $serif;
 }
 
 .index .footerWrap {
@@ -1053,7 +1022,7 @@ padding-bottom: 5px
 }
 /* Typography */
 
-h1 {font-size: 42px; margin-bottom: 0;color: #0657af;}
+h1 {font-size: 42px; margin-bottom: 0;color: $primary_blue;}
 
 h1.logo{
 	margin: 0;
@@ -1075,17 +1044,17 @@ h1.logo{
 
 .logo a {}
 
-h2 {font-size: 24px; line-height: 32px; color: #0657af;font-family: "ff-tisa-sans-web-pro"}
+h2 {font-size: 24px; line-height: 32px; color: $primary_blue; font-family: $sans}
 
-h3 {font-size: 21px; line-height: 24px; color: #404040}
+h3 {font-size: 21px; line-height: 24px; color: $grey_text}
 
-h3 a {color:#0657af;font-family: "ff-tisa-sans-web-pro";}
+h3 a {color:$primary_blue;font-family: $sans;}
 
-h4 {font-size: 16px; line-height: 21px; color: #0657af;margin-top: 0;}
+h4 {font-size: 16px; line-height: 21px; color: $primary_blue; margin-top: 0;}
 
-a {color: #0657af;font-family: "ff-tisa-sans-web-pro";}
+a {color: $primary_blue;font-family: $sans;}
 
-a:hover {color: #478eda; cursor: pointer;}
+a:hover {color: $secondary_blue; cursor: pointer;}
 
 ul {padding-left: 0;}
 
@@ -1099,7 +1068,7 @@ ol > li:before {
     -moz-box-sizing: border-box;
     background: none repeat scroll 0 0 #DDDDDD;
     border-radius: 6px 6px 6px 6px;
-    color: #404040;
+    color: $grey_text;
     content: counter(li, decimal);
     counter-increment: li;
     display: inline-block;
@@ -1114,11 +1083,11 @@ ul li {list-style-type: none;}
 .button {
 	border-radius: 6px;
 	padding: 8px 10px 6px;
-	background: #0657af;
+	background: $primary_blue;
 	color: #fff;
 	font-size: 13px;
 	text-decoration: none;
-	font-family: "ff-tisa-sans-web-pro";
+	font-family: $sans;
 	line-height: 24px;
 	height: 24px;
 	display: inline-block;
@@ -1128,33 +1097,34 @@ ul li {list-style-type: none;}
 	font-size: 16px;
 	border-radius: 6px;
 	padding:10px 15px 8px;
-	background: #0657af;
+	background: $primary_blue;
 	color: #fff;
 	text-decoration: none;
-	font-family: "ff-tisa-sans-web-pro";
+	font-family: $sans;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	 line-height: 21px;
 }
 
-.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center #0657af; padding-left: 40px;}
+.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding-left: 40px;}
 
 .button:hover, .button:active, .button-lg:hover, .button-lg:active {
-	background-color: #478eda;
-	color: #f6ea32;
+	background-color: $secondary_blue;
+	color: $highlight_yellow;
 	text-decoration: none;
 }
 
 blockquote {
 	border-bottom: 1px dashed #CCCCCC;
     border-top: 1px dashed #CCCCCC;
-    color: #0657AF;
+    color: $primary_blue;
     font-size: 30px;
     font-style: italic;
     line-height: 1.45;
     margin: 30px 0;
     padding: 0;
     position: relative;
+    font-family: $serif;
 }
 
 
@@ -1162,22 +1132,22 @@ blockquote {
 blockquote.double {
 	padding: 100px 0; text-align: center
 }
-blockquote.double cite { color: #404040;
+blockquote.double cite { color: $grey_text;
     display: block;
     font-style: normal;font-size: 21px; margin: 10px 0;}
-    .slide blockquote cite {color: #478EDA;
+    .slide blockquote cite {color: $secondary_blue;
     font-size: 16px;
     margin: 20px 0;
 }
     .slide blockquote cite a {
-	    color: #0657AF;
+	    color: $primary_blue;
     }
 blockquote:after, blockquote.double:before {
-  	background: none repeat scroll 0 0 #0657AF;
+  	background: none repeat scroll 0 0 $primary_blue;
     border-radius: 50% 50% 50% 50%;
-    color: #F6EA32;
+    color: $highlight_yellow;
     content: "\201D";
-    font-family: Georgia;
+    font-family: Georgia, serif;
     font-size: 135px;
     font-style: normal;
     height: 80px;
@@ -1192,10 +1162,10 @@ blockquote:after, blockquote.double:before {
 }
 
 blockquote.double:before { left: 360px;
-    top: 27px;    content: "\201C"; background-color: #0657AF;
+    top: 27px;    content: "\201C"; background-color: $primary_blue;
 }
 blockquote.double:after {    left: 360px;
-    top: 270px;    content: "\201D"; background-color: #0657AF; }
+    top: 270px;    content: "\201D"; background-color: $primary_blue; }
 
 .featureBlock blockquote {
     border: 0 none;
@@ -1219,32 +1189,12 @@ blockquote.side {
 
 
 blockquote.side:after {
-     left: 220px;    top: 106%; background-color: #eee;color: #404040;
+     left: 220px;    top: 106%; background-color: #eee;color: $grey_text;
 }
 
-blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
+blockquote.side:before {  left: 220px; background-color: #eee; color: $grey_text;
     top: -100px;}
 
-/*
-.featureBlock blockquote:before {
-  	background: none repeat scroll 0 0 #0657AF;
-    border-radius: 50% 50% 50% 50%;
-    color: #F6EA32;
-    content: "\201C";
-    font-family: Georgia;
-    font-size: 135px;
-    font-style: normal;
-    height: 60px;
-    left: 0;
-    line-height: 150px;
-    margin-left: 110px;
-    margin-top: -78px;
-    position: absolute;
-    text-align: center;
-    top: -4px;
-    width: 60px;
-}
-*/
 .featureBlock blockquote:after, .featureBlock blockquote:before {
     font-family: Georgia;
     font-size: 80px;
@@ -1258,9 +1208,9 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
     text-align: center;
     top: 40px;
     width: 50px;
-    background: none repeat scroll 0 0 #0657AF;
+    background: none repeat scroll 0 0 $primary_blue;
     border-radius: 50% 50% 50% 50%;
-    color: #F6EA32;
+    color: $highlight_yellow;
     content: "\201D";
     }
 
@@ -1268,7 +1218,7 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 }
 
 .featureBlock cite {
-   color: #F6EA32;
+   color: $highlight_yellow;
     display: block;
     font-size: 16px;
     font-style: normal;
@@ -1277,7 +1227,7 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 .slide blockquote {
    -moz-box-sizing: border-box;
     border: 0 none;
-    color: #404040;
+    color: $grey_text;
     margin: 0;
     padding: 45px 60px 0;
     width: 100%;
@@ -1288,13 +1238,13 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 	display: none;
 }
 
-    .home-horz .slide .content h2 {text-align: center; margin-top: 20px; color:#F6EA32
+    .home-horz .slide .content h2 {text-align: center; margin-top: 20px; color:$highlight_yellow
     }
-    .home-horz .slide .content h2 a {color: #0657AF}
+    .home-horz .slide .content h2 a {color: $primary_blue}
     .home-horz .slide .content {width: 100%;  }
 .premium {
 	background: url("#{$image_path}/images/icon-premium.png") no-repeat center center;
-	font-family: "ff-tisa-sans-web-pro", sans-serif;
+	font-family: $sans;
 	margin-left: 7px;
 	width: 16px;
 	height: 16px;
@@ -1315,7 +1265,7 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 	list-style-type: none;
 	padding: 0px 0 0 0;
 	position: relative;
-	background: #404040;
+	background: $grey_bg;
     margin: 30px 0 0;
    	width: 50%;
 	float: left;
@@ -1346,16 +1296,16 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 .ls-contents h2 {
 	padding-top: 30px;
 	margin: 0px 0 0px 20px;
-    color: #404040;
+    color: $grey_text;
     border-color: #ddd;
 }
 .issue-contents li h3, .issue-contents h3 a,.ls-contents h3, .ls-contents h3 a, .issue-contents a{
 	margin: 0;
-	color: #0657AF;
+	color: $primary_blue;
 	font-size: 16px;
 }
 .issue-contents li h3, .issue-contents h3 a,.issue-contents a{
-	color: #F6EA32;
+	color: $highlight_yellow;
 }
 
 .issue-contents h3 {
@@ -1370,9 +1320,9 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: #404040;
 }
 
 .issue-contents a:hover {
-	color: #478EDA
+	color: $secondary_blue
 }
-.issue-contents span, .ls-contents span {	font-family: "ff-tisa-sans-web-pro", sans-serif;
+.issue-contents span, .ls-contents span {	font-family: $sans;
 font-size: 14px;
 color: #4590D4;
 }
@@ -1387,10 +1337,10 @@ border-top: 1px solid rgba(71, 147, 202, 0.2);
 }
 
 .section h3 {
-    color: #0657AF;
+    color: $primary_blue;
     display: inline;
     float: left;
-    font-family: "ff-tisa-sans-web-pro";
+    font-family: $sans;
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 0;
@@ -1429,7 +1379,7 @@ height: 50px;
 }
 
 .carousel h2, .discussion header h2 {
-    color: #0657AF;
+    color: $primary_blue;
     display: inline;
     float: left;
     margin-top: 0;
@@ -1572,7 +1522,7 @@ header .signin {
 }
 
 .comment:hover:before {
-    background: #478eda;
+    background: $secondary_blue;
 }
 
 .comment .text:before {
