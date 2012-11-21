@@ -272,7 +272,6 @@ input[type="search"] {
 .search .btn-icon {
 	background-image: url("#{$image_path}/images/search_icon.png");
 	float: left;
-    height: 30px;
     margin-left: -40px;
     margin-top: 5px;
     padding-left: 20px;
@@ -1097,17 +1096,20 @@ ul li {list-style-type: none;}
 .button-lg {
 	font-size: 16px;
 	border-radius: 6px;
-	padding:10px 15px 8px;
+	padding:0 15px;
+  line-height:40px;
 	background: $primary_blue;
 	color: #fff;
 	text-decoration: none;
 	font-family: $sans;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	 line-height: 21px;
 }
 
-.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding-left: 40px;}
+.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding-left: 40px; line-height:30px;display:inline-block;}
+.sidebar .tout{
+  margin-left: 0;
+}
 
 .button:hover, .button:active, .button-lg:hover, .button-lg:active {
 	background-color: $secondary_blue;
