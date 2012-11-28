@@ -1,4 +1,6 @@
 // You custom settings file to override Foundation defaults
 @import "settings";
-
-@import "foundation";
+@import "modular-scale";
+@import "compass/css3";
+@import "foundation/settings";
+@import "foundation/components/modules/tabs";
