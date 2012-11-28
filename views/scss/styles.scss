@@ -24,7 +24,7 @@ $sans: "ff-tisa-sans-web-pro", Helvetica Neue, Arial, Helvetica, sans-serif;
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: $sans;
+	font-family: $serif;
 	color: $grey_text;
 	font-size: 16px;
 	line-height: 30px;
@@ -341,6 +341,7 @@ background-color: #eee;
 	border-bottom: 1px dashed #eee;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
+	font-family: $serif
 }
 
 .toc h2 span {display: block; font-weight: normal;	color: #4590d4;text-transform: uppercase; font-size: 18px;}
@@ -351,8 +352,9 @@ background-color: #eee;
 }
 
 .toc header p {
-	margin-top: 0;
-	font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 0;
+    padding-top: 5px;
 }
 .inEssence {
 	margin-right: 10%;
@@ -388,7 +390,7 @@ border-bottom: 1px dashed #ddd;
 
 }
 .articles li p {
-	margin-top: 0;
+	margin: 0 0 5px;
    font-size: 14px;
     line-height: 21px;
 }
@@ -402,15 +404,15 @@ border-bottom: 1px dashed #ddd;
 }
 
 .home-horz .optionalAd {background-color: $grey_bg;}
-.optionalAd .double {color: white; border: 0;margin: 0;padding: 40px}
+.optionalAd .double {color: white; border: 0;margin: 0;padding: 40px 70px}
 .optionalAd .double:before, .optionalAd .double:after {background-color: #FFFFFF;
     color: $secondary_blue;
  margin-left: 0px;width: 60px; height: 60px; font-size: 90px; line-height: 110px}
 .optionalAd .double:before {left: -30px;
-    top: 100px;}
+    top: 38%;}
 .optionalAd .double:after {     margin-left: 370px;
     right: 0;
-    top: 100px;}
+    top: 38%;}
 .optionalAd .double cite {color: $highlight_yellow}
 .optionalAd cite a {color: $highlight_yellow}
 .curated .articles li {
@@ -563,7 +565,18 @@ footer .slug {
 	font-size: 42px;
 	font-family: $serif;
 }
-
+.home-horz .lead h2 {
+	margin: 0 0 5px;
+}
+.home-horz .lead h2 a {
+	color: $highlight_yellow;
+	font-size: 42px;
+	font-family: $serif;
+}
+.home-horz .lead span {
+	display: block;
+    margin-bottom: 20px;
+}
 .home .hero h2 {top:280px; margin: 0;}
 .home-horz .hero h2 span {padding: 5px 20px 8px}
 .hero-vert h1, .hero-vert h2{
@@ -815,7 +828,7 @@ margin-left: 20px;
  	background-color: $grey_bg;
     font-family: $sans;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 30px;
     margin-top: 0px;
      border-top: 1px dashed #555555;
     padding: 20px;
@@ -842,14 +855,14 @@ margin-left: 20px;
 
 .home-horz .hero-related h3 {
 	margin-top: 0;
-	padding: 5px 0;
+	padding: 0 0 10px;
 
 }
 
 .home-horz .hero-related li {
 	width: 100%;
- line-height: 32px;
- }
+	line-height: 32px;
+}
 
 .vert {
 	box-sizing: border-box;
@@ -877,9 +890,14 @@ div.lead .slug {color: #fff; font-size: 12px; text-transform: uppercase;}
 
 div.lead h1 { color: $highlight_yellow;
     font-family: $serif;
-    margin: 10px 0 15px;}
+    margin: -10px 0 10px;
+    line-height: 50px;
+    position: relative}
 
 div.lead .author {color: $secondary_blue;}
+
+div.lead .slug {float: right; line-height: 36px;
+}
 .articleDetail div.lead p{
 	width: 100%;
 	float: none;
@@ -1003,11 +1021,13 @@ padding-bottom: 5px
 }
 
 .footer p{
+	font-size: 11px;
+
 }
 
 .address {
 	margin-top: 10px;
-		font-size: 11px;
+	font-size: 11px;
 }
 .address span {
 	display: block
@@ -1067,7 +1087,7 @@ h1.logo{
 
 h2 {font-size: 24px; line-height: 32px; color: $primary_blue; font-family: $sans}
 
-h3 {font-size: 21px; line-height: 24px; color: $grey_text}
+h3 {font-size: 21px; line-height: 24px; color: $grey_text; font-family: $serif}
 
 h3 a {color:$primary_blue;font-family: $sans;}
 
@@ -1118,7 +1138,7 @@ ul li {list-style-type: none;}
 	font-size: 16px;
 	border-radius: 6px;
 	padding:0 15px;
-  line-height:40px;
+	line-height:40px;
 	background: $primary_blue;
 	color: #fff;
 	text-decoration: none;
@@ -1139,10 +1159,10 @@ ul li {list-style-type: none;}
 }
 
 blockquote {
-	border-bottom: 1px dashed #CCCCCC;
-    border-top: 1px dashed #CCCCCC;
+	border-bottom: 1px dashed #eee;
+    border-top: 1px dashed #eee;
     color: $primary_blue;
-    font-size: 30px;
+    font-size: 24px;
     font-style: italic;
     line-height: 1.45;
     margin: 30px 0;
@@ -1151,19 +1171,20 @@ blockquote {
     font-family: $serif;
 }
 
-
-
 blockquote.double {
-	padding: 100px 0; text-align: center
+	padding: 60px 20px; text-align: center
 }
 blockquote.double cite { color: $grey_text;
     display: block;
-    font-style: normal;font-size: 21px; margin: 10px 0;}
-    .slide blockquote cite {color: $secondary_blue;
+    font-style: normal;
+    font-size: 21px; 
+    margin: 10px 0;
+}
+.slide blockquote cite {color: $primary_blue;
     font-size: 16px;
     margin: 20px 0;
 }
-    .slide blockquote cite a {
+.slide blockquote cite a {
 	    color: $primary_blue;
     }
 blockquote:after, blockquote.double:before {
@@ -1172,24 +1193,25 @@ blockquote:after, blockquote.double:before {
     color: $highlight_yellow;
     content: "\201D";
     font-family: Georgia, serif;
-    font-size: 135px;
+    font-size: 100px;
     font-style: normal;
-    height: 80px;
-    left: 0;
-    line-height: 150px;
-    margin-left: -120px;
-    top: 27px;
+    height: 60px;
+    line-height: 114px;
     position: absolute;
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
-    width: 80px;
+    width: 60px;
 }
 
-blockquote.double:before { left: 360px;
-    top: 27px;    content: "\201C"; background-color: $primary_blue;
+blockquote.double:before {
+    top: 5%;    content: "\201C"; background-color: $primary_blue;
+    left: 0
 }
-blockquote.double:after {    left: 360px;
-    top: 270px;    content: "\201D"; background-color: $primary_blue; }
+blockquote.double:after {
+	left: 90%;
+    bottom: 5%;
+    content: "\201D"; 
+    background-color: $primary_blue; }
 
 .featureBlock blockquote {
     border: 0 none;
@@ -1232,7 +1254,7 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: $grey_text
     text-align: center;
     top: 40px;
     width: 50px;
-    background: none repeat scroll 0 0 $primary_blue;
+    background: none;
     border-radius: 50% 50% 50% 50%;
     color: $highlight_yellow;
     content: "\201D";
@@ -1253,9 +1275,10 @@ blockquote.side:before {  left: 220px; background-color: #eee; color: $grey_text
     border: 0 none;
     color: $grey_text;
     margin: 0;
-    padding: 45px 60px 0;
+    padding: 55px 60px 0;
     width: 100%;
-    box-sizing: border-box;font-size: 28px;
+    box-sizing: border-box;
+    font-size: 24px;
 }
 
 .slide blockquote:before,.slide blockquote:after {
