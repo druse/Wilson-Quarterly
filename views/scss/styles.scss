@@ -410,9 +410,8 @@ border-bottom: 1px dashed #ddd;
  margin-left: 0px;width: 60px; height: 60px; font-size: 90px; line-height: 110px}
 .optionalAd .double:before {left: -30px;
     top: 38%;}
-.optionalAd .double:after {     margin-left: 370px;
-    right: 0;
-    top: 38%;}
+.optionalAd .double:after {right: 0;
+    top: 38%;margin-left: 45px}
 .optionalAd .double cite {color: $highlight_yellow}
 .optionalAd cite a {color: $highlight_yellow}
 .curated .articles li {
@@ -855,13 +854,12 @@ margin-left: 20px;
 
 .home-horz .hero-related h3 {
 	margin-top: 0;
-	padding: 0 0 10px;
-
+	padding: 0 0 7px;
 }
 
 .home-horz .hero-related li {
 	width: 100%;
-	line-height: 32px;
+	line-height: 30px;
 }
 
 .vert {
