@@ -1233,11 +1233,10 @@ blockquote.side {
 
 
 blockquote.side:after {
-     left: 220px;    top: 106%; background-color: #eee;color: $grey_text;
+     left: 120px;    top: 106%; background-color: #eee;color: $grey_text;
 }
 
-blockquote.side:before {  left: 220px; background-color: #eee; color: $grey_text;
-    top: -100px;}
+blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text;margin-top: -27%;}
 
 .featureBlock blockquote:after, .featureBlock blockquote:before {
     font-family: Georgia;
