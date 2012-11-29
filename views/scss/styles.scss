@@ -274,7 +274,7 @@ input[type="search"] {
 	float: left;
     margin-left: -40px;
     margin-top: 5px;
-    padding-left: 20px;
+    padding: 0 15px 0 20px;
     text-indent: -999px;
 }
 
@@ -1129,13 +1129,12 @@ ul li {list-style-type: none;}
 	font-family: $sans;
 	line-height: 24px;
 	height: 24px;
-	display: inline-block;
 }
 
 .button-lg {
 	font-size: 16px;
 	border-radius: 6px;
-	padding:0 15px;
+	padding:8px 15px;
 	line-height:40px;
 	background: $primary_blue;
 	color: #fff;
@@ -1145,7 +1144,7 @@ ul li {list-style-type: none;}
 	box-sizing: border-box;
 }
 
-.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding-left: 40px; line-height:30px;display:inline-block;}
+.btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding: 10px 10px 8px 40px; line-height:30px;}
 .sidebar .tout{
   margin-left: 0;
 }
@@ -1243,9 +1242,7 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
     font-size: 80px;
     font-style: normal;
     height: 50px;
-    left: 0;
     line-height: 92px;
-    margin-left: 130px;
     margin-top: 160px;
     position: absolute;
     text-align: center;
@@ -1259,7 +1256,9 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 
 .featureBlock blockquote:before {top: -190px;    content: "\201C";
 }
-
+.featureBlock blockquote:after {
+	right: 0;
+}
 .featureBlock cite {
    color: $highlight_yellow;
     display: block;
