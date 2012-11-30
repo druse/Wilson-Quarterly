@@ -82,6 +82,7 @@ textarea {
 	background-color: $secondary_blue;
 	color: #fff;
 	border-radius: 6px;
+	text-decoration: none
 }
 
 .mainNav ul li.active a {
@@ -166,8 +167,7 @@ textarea {
 
 .app_promo h3 {color: $highlight_yellow; margin-top: 0;}
 .app_promo p {	font-family: $sans;}
-.app_promo a {color: $secondary_blue};
-
+.app_promo a,.app_promo a:hover{color: $highlight_yellow};
 .currentIssue img {
 border: 1px solid $secondary_blue;
 	}
@@ -567,6 +567,8 @@ footer .slug {
 .home-horz .lead h2 {
 	margin: 0 0 5px;
 }
+
+.hero h2 a:hover {color: white}
 .home-horz .lead h2 a {
 	color: $highlight_yellow;
 	font-size: 42px;
@@ -605,7 +607,7 @@ footer .slug {
  .home .hero-vert h2 {top: 43px; line-height: 36px}
  .home .hero-vert .author {top: 155px;}
  .hero-vert h2 a {color: $highlight_yellow; font-size: 35px;font-family: $serif;}
-  .hero-vert h2 a:hover {color: $secondary_blue}
+/*   .hero-vert h2 a:hover {color: $secondary_blue} */
   .hero-vert h2 span{padding: 20px;}
   .vert .lead {padding-left: 0; padding-top: 5px;}
   .home .vert .lead {padding-top: 0; border: 0}
@@ -660,7 +662,7 @@ h1.span {
 	     padding: 0
     }
 
-    .home  .hero-related li a:hover {color: white}
+/*     .home  .hero-related li a:hover {color: white} */
 .articleDetail .hero .sans .slug {top: 208px;}
 
 .articleDetail .hero .sans h1 {margin-top: 0;top:274px;}
@@ -1093,7 +1095,7 @@ h4 {font-size: 16px; line-height: 21px; color: $primary_blue; margin-top: 0;}
 
 a {color: $primary_blue;font-family: $sans;}
 
-a:hover {color: $secondary_blue; cursor: pointer;}
+a:hover {color: $secondary_blue; cursor: pointer; text-decoration: underline;}
 
 ul {padding-left: 0;}
 
