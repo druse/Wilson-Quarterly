@@ -135,7 +135,7 @@ textarea {
 	font-size: 14px;font-family: $sans;  color: $grey_text
 }
 .featureBlock p {}
-.featureBlock a {color:#fff }
+.featureBlock a {color: $highlight_yellow; }
 .featureBlock a:hover {color: $highlight_yellow;}
 .authorSpot {
 	margin-top: 20px;
@@ -555,15 +555,7 @@ footer .slug {
     top: 37px;
     z-index: 9999;
 }
-.articleDetail .hero h1, .home .hero h2, .block h2 a {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	top: 250px;
-	color: $highlight_yellow;
-	font-size: 42px;
-	font-family: $serif;
-}
+
 .home-horz .lead h2 {
 	margin: 0 0 5px;
 }
@@ -580,14 +572,27 @@ footer .slug {
 }
 .home .hero h2 {top:280px; margin: 0;}
 .home-horz .hero h2 span {padding: 5px 20px 8px}
-.hero-vert h1, .hero-vert h2{
+.hero-vert h1, .hero-vert h2, {
  	color: $highlight_yellow;
     left: 381px;
     position: absolute;
     top: 40px;
     z-index: 9999;
     line-height: 48px;}
+.hero-vert h1 a {
+	 	color: $highlight_yellow;
+	 	font-family: $serif;
 
+}
+.articleDetail .hero h1, .home .hero h2, .block h2 a,  {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 250px;
+	color: $highlight_yellow;
+	font-size: 42px;
+	font-family: $serif;
+}
 .home-horz .hero .block {
 	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .8);
