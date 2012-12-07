@@ -455,7 +455,8 @@ border-bottom: 1px dashed #ddd;
 
 .meta_end {border-bottom: none;}
 
-footer .slug, .read_est, .share, .commentLink, .meta .pdf {
+
+footer .slug, .read_est, .share, .commentLink, .meta .pdf, .meta .slug {
 	float: left;
 	background: url("#{$image_path}/images/readtime.png") no-repeat 5px center;
 	font-size: 12px;
@@ -466,7 +467,11 @@ footer .slug, .read_est, .share, .commentLink, .meta .pdf {
 	float: left;
 	border-radius: 6px;
 	color: $grey_text}
-
+.meta .slug {
+	padding: 7px 8px 7px 30px;
+	margin-right: 10px;
+		background-image: url("#{$image_path}/images/slug_icon.png");
+}
 .share {
     float: right;
     position: relative;
