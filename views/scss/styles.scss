@@ -1180,27 +1180,11 @@ blockquote {
     font-family: $serif;
 }
 
-blockquote.double {
-	padding: 60px 20px; text-align: center
-}
-blockquote.double cite { color: $grey_text;
-    display: block;
-    font-style: normal;
-    font-size: 21px; 
-    margin: 10px 0;
-}
-.slide blockquote cite {color: $primary_blue;
-    font-size: 16px;
-    margin: 20px 0;
-}
-.slide blockquote cite a {
-	    color: $primary_blue;
-    }
-blockquote:after, blockquote.double:before {
-  	background: none repeat scroll 0 0 $primary_blue;
+.single:before, .single-nobg:before {
+	background: none repeat scroll 0 0 $primary_blue;
     border-radius: 50% 50% 50% 50%;
     color: $highlight_yellow;
-    content: "\201D";
+    content: "\201C";
     font-family: Georgia, serif;
     font-size: 100px;
     font-style: normal;
@@ -1210,17 +1194,86 @@ blockquote:after, blockquote.double:before {
     text-align: center;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
     width: 60px;
+    margin-left: -100px;
+    margin-top: 28px;
 }
 
-blockquote.double:before {
-    top: 5%;    content: "\201C"; background-color: $primary_blue;
+.single:before {
+	margin-left: 250px;
+	bottom: 20px;
+	content: "\201D";
+}
+
+.single {
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.single-nobg:before {
+	background: none;
+	color: $primary_blue
+}
+
+blockquote.double,blockquote.double-nobg {
+	padding: 60px 20px; text-align: center
+}
+
+blockquote.double cite { color: $grey_text;
+    display: block;
+    font-style: normal;
+    font-size: 21px; 
+    margin: 10px 0;
+}
+
+.slide blockquote cite {color: $primary_blue;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.slide blockquote cite a {
+	    color: $primary_blue;
+    }
+    
+blockquote.double:after, blockquote.double:before {
+  	background: none repeat scroll 0 0 $primary_blue;
+    border-radius: 50% 50% 50% 50%;
+    color: $highlight_yellow;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    font-style: normal;
+    height: 55px;
+    line-height: 102px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    width: 55px;
+}
+
+blockquote.double:before,blockquote.double-nobg:before {
+    top: 5%;
+    content: "\201C"; 
     left: 0
 }
-blockquote.double:after {
+blockquote.double:after,blockquote.double-nobg:after {
 	left: 90%;
     bottom: 5%;
     content: "\201D"; 
-    background-color: $primary_blue; }
+}
+
+blockquote.double-nobg:after, blockquote.double-nobg:before {
+  	background: none;
+    border-radius: 50% 50% 50% 50%;
+    color: $primary_blue;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    font-style: normal;
+    height: 55px;
+    line-height: 100px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    width: 55px;
+}
 
 .featureBlock blockquote {
     border: 0 none;
@@ -1242,7 +1295,6 @@ blockquote.side {
 }
 
 
-
 blockquote.side:after {
      left: 120px;    top: 106%; background-color: #eee;color: $grey_text;
 }
@@ -1251,15 +1303,15 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 
 .featureBlock blockquote:after, .featureBlock blockquote:before {
     font-family: Georgia;
-    font-size: 80px;
+    font-size: 75px;
     font-style: normal;
-    height: 50px;
-    line-height: 92px;
+    height: 45px;
+    line-height: 85px;
     margin-top: 160px;
     position: absolute;
     text-align: center;
     top: 40px;
-    width: 50px;
+    width: 45px;
     background: none;
     border-radius: 50% 50% 50% 50%;
     color: $highlight_yellow;
@@ -1268,11 +1320,16 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 
 .featureBlock blockquote:before {top: -190px;    content: "\201C";
 }
+
 .featureBlock blockquote:after {
-	right: 0;
+	right: 0;top: 35px;
+}
+
+.home-horz .featureBlock blockquote:after, .home-horz .featureBlock blockquote:before {
+	background-color: $primary_blue; color: $highlight_yellow
 }
 .featureBlock cite {
-   color: $highlight_yellow;
+   	color: $highlight_yellow;
     display: block;
     font-size: 16px;
     font-style: normal;
