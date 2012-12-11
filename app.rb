@@ -45,6 +45,10 @@ class App < Sinatra::Base
        get "/home-vert" do
     erb :homevert
   end
+  
+        get "/quotes" do
+    erb :quotes
+  end
    
    
 
