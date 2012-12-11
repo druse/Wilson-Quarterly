@@ -1,6 +1,12 @@
 .quotes .footerWrap {
 display: none;
 }
+
+.quotes h3 {
+	margin-top: 140px;
+}
+.quotes {
+}
 /**
  *  Colors:
  */
@@ -1277,7 +1283,9 @@ blockquote.double-nobg:after, blockquote.double-nobg:before {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
     width: 55px;
 }
-
+blockquote.double-nobg {
+	padding: 40px 20px
+}
 .featureBlock blockquote {
     border: 0 none;
     color: white;
@@ -1328,7 +1336,7 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 	right: 0;top: 37px;
 }
 
-.home-horz .featureBlock blockquote:after, .home-horz .featureBlock blockquote:before {
+.featureBlock blockquote.bg:after, .featureBlock blockquote.bg:before {
 	background-color: $primary_blue; color: $highlight_yellow
 }
 .featureBlock cite {
