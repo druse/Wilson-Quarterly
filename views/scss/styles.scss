@@ -1336,8 +1336,16 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 	right: 0;top: 37px;
 }
 
-.featureBlock blockquote.bg:after, .featureBlock blockquote.bg:before {
+.featureBlock blockquote.bg:after, .featureBlock blockquote.bg:before,.featureBlock blockquote.whimsy:after, .featureBlock blockquote.whimsy:before{
 	background-color: $primary_blue; color: $highlight_yellow
+}
+
+.whimsy:after {display: none;}
+.featureBlock .whimsy:before {left: 127px;top:-240px;
+	font-size: 100px;
+	height: 60px;
+	width: 60px;
+	line-height: 110px
 }
 .featureBlock cite {
    	color: $highlight_yellow;
@@ -1364,7 +1372,7 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
     .home-horz .slide .content h2 {text-align: center; margin-top: 20px; color:$highlight_yellow
     }
     .home-horz .slide .content h2 a {color: $primary_blue}
-    .home-horz .slide .content {width: 100%;  }
+    .home-horz .slide .content {width: 100%;}
 .premium {
 	background: url("#{$image_path}/images/icon-premium.png") no-repeat center center;
 	font-family: $sans;
