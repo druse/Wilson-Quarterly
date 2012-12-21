@@ -49,8 +49,10 @@ class App < Sinatra::Base
         get "/quotes" do
     erb :quotes
   end
-   
-   
+  
+get "/guide" do
+erb :guide, {:layout => :special}
+end   
 
   get "/stylesheets/*.css" do |path|
     #content_type "text/css", charset: "utf-8"
