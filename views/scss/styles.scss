@@ -1258,9 +1258,7 @@ legend {padding: 0; font-weight: bold; font-family: $sans; color: $primary_blue}
 .btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding: 10px 10px 8px 40px; line-height:30px;}
 
 table {border: 1px solid $secondary_blue_light}
-
-
-
+table{border-radius: 6px}
 th {background-color: $primary_blue; color: white;}
 
 th, td {padding: 10px 15px}
@@ -1277,6 +1275,7 @@ td {background: white}
 	text-decoration: none;
 }
 .disabled,.disabled:hover  {background-color: #ddd; color: #777;cursor: default;}
+
 blockquote {
 	border-bottom: 1px dashed #eee;
     border-top: 1px dashed #eee;
@@ -1309,7 +1308,7 @@ blockquote {
 }
 
 .single:before {
-	margin-left: 250px;
+	margin-left: -30px;	
 	bottom: 20px;
 	content: "\201D";
 }
