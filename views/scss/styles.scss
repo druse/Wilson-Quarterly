@@ -1191,7 +1191,8 @@ a:hover {color: $secondary_blue; cursor: pointer; text-decoration: underline;}
 pre {
  white-space: pre-wrap;
  white-space: -moz-pre-wrap;
- white-space: -o-pre-wrap; font-family: $sans
+ white-space: -o-pre-wrap;
+ font-size: 13px;
 }
 code {
  display: block;
@@ -1324,7 +1325,7 @@ blockquote {
 }
 
 blockquote.double,blockquote.double-nobg {
-	padding: 60px 20px 65px; text-align: center
+	padding: 70px 20px 65px; text-align: center
 }
 
 blockquote.double cite { color: $grey_text;
@@ -1567,7 +1568,7 @@ border-top: 1px solid rgba(71, 147, 202, 0.2);
     padding: 0;
 }
 
-.section h3 {
+.section h3{
     color: $primary_blue;
     display: inline;
     float: left;
@@ -1771,7 +1772,7 @@ header .signin {
     -o-transform: rotate(45deg");
 }
 
-
+.guide {margin: 50px auto 100px;}
 
 /* =Clearfix (all browsers)
 --------------------------------*/
