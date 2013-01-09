@@ -48,6 +48,7 @@ body {
 	position: relative;
 	margin-left: 10px;
 	margin-right: 10px;
+  @include box-sizing('border-box');
 }
 
 .grid_special {
