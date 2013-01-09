@@ -133,8 +133,7 @@ input[type=text], textarea,input[type=password] {
 	background-color: #fff;
 	border-radius: 6px;
 	background: #fff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    @inclulde box-sizing('border-box');
     border: 1px solid #ddd;
     font-size: 16px;
     font-family: $sans
@@ -207,8 +206,10 @@ input[type=text], textarea,input[type=password] {
 }
 
 .featureBlock {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    
+
+    @inclulde box-sizing('border-box');
+
     border-right: 1px dashed #EEEEEE;
     float: left;
     padding: 20px;
@@ -258,8 +259,10 @@ input[type=text], textarea,input[type=password] {
 .app_promo {
 	background: url("#{$image_path}/images/app_promo.png") center 150px no-repeat $grey_bg;
 	padding: 10px 10px 120px 10px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+
+
 	color: white;
 	position: relative;
 	margin-top: 20px;
@@ -332,8 +335,10 @@ border-bottom-left-radius: 6px;
 	line-height: 21px;
 	padding: 15px 10px 10px;
 	font-size: 14px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+
+
 }
 
 
@@ -358,8 +363,10 @@ input[type="search"] {
     height:40px;
     float: left;
     margin-top: 5px\9;
-     box-sizing: border-box;
-    -moz-box-sizing: border-box;
+     @inclulde box-sizing('border-box');
+
+    
+
     border: 1px solid #ddd;
     font-size: 14px;
     text-align: left;
@@ -394,8 +401,9 @@ input[type="submit"] {
 	float: left;
 background-color: #eee;
 	padding: 15px 20px;
-	-moz-box-sizing:border-box;
-	box-sizing: border-box;
+	
+	@inclulde box-sizing('border-box');
+
 }
 
 .popular #views {
@@ -516,8 +524,10 @@ border-bottom: 1px dashed #ddd;
 .optionalAd cite a {color: $highlight_yellow}
 .curated .articles li {
 	padding-top: 0;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+
+	@inclulde box-sizing('border-box');
+
 	padding: 0 10px 0 0;
 	border: none
 }
@@ -631,8 +641,10 @@ footer .slug {
 	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .7);
 	padding: 10px 20px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+
+
 }
 
 .home .hero-vert h2,.home .hero-vert .slug, .home .hero-vert .author {
@@ -712,8 +724,10 @@ footer .slug {
 	background: rgb(0, 0, 0);
 	background: rgba(0,0,0, .8);
 	padding: 10px 30px 15px 20px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+
+
 	position: absolute;
 	z-index: 1;
 	top: 250px;
@@ -773,7 +787,9 @@ h1.span {
     .home-horz .lead h3{}
 
 
-        .home .hero-related li {width: 33%; -moz-box-sizing: border-box; box-sizing: border-box;  padding: 0 10px 0 0; margin-right: 0;float: left}
+        .home .hero-related li {width: 33%; 
+ @inclulde box-sizing('border-box');
+  padding: 0 10px 0 0; margin-right: 0;float: left}
 
             .home .vert .hero-related li {
 	    float: left;
@@ -824,27 +840,33 @@ h1 span.spacer {
 .home .hero-vert img{
 	float: left;
 /* 	width: 283px; */
-	-moz-box-sizing: border-box;
+
+
     border-right: 1px dashed #AAAAAA;
-    box-sizing: border-box;
+    @inclulde box-sizing('border-box');
+
 }
 
 .issueLanding .hero div img {padding: 0; margin: 10px 0 20px; float: left}
 
 .home .hero-vert div {
-	-moz-box-sizing: border-box;
+
+
     float: left;
     min-height: 340px;
     padding: 20px 40px 20px 40px;
     width: 480px;
-    box-sizing: border-box;
+    @inclulde box-sizing('border-box');
+
     position: relative;
     color: white;
 }
 
 .issueLanding .hero div {width: 400px; margin: auto;}
 .issueLanding .hero div a {margin: 20px 0 0 20px; float: left}
-.issueLanding .hero p {font-size: 18px; text-align: center;padding: 0 50px; -moz-box-sizing: border-box; box-sizing: border-box;}
+.issueLanding .hero p {font-size: 18px; text-align: center;padding: 0 50px; 
+ @inclulde box-sizing('border-box');
+}
 
 .issueLanding h1,{
 	color:  $highlight_yellow;
@@ -882,7 +904,8 @@ color: white;
 .hero-issue a.button-lg {
 margin-left: 20px;
 }
-.hero-issue img.cover {float: left; width: 40%; margin: 30px 5% 0; border: 5px solid #333; box-sizing: border-box; -moz-box-sizing: border-box;}
+.hero-issue img.cover {float: left; width: 40%; margin: 30px 5% 0; border: 5px solid #333; @inclulde box-sizing('border-box');
+}
 
 
 .hero-vert img {
@@ -896,8 +919,10 @@ margin-left: 20px;
 
 .home .rotator {margin-bottom: 0}
 .rotator .slide {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+
+
 	padding: 30px 50px;
 	height: 321px;
 }
@@ -970,8 +995,8 @@ margin-left: 20px;
 	width: 35%;
 	margin-top: 0;
 	padding: 0 20px;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box
+	@inclulde box-sizing('border-box');
+
 }
 
 .home-horz .hero-related h3 {
@@ -985,8 +1010,10 @@ margin-left: 20px;
 }
 
 .vert {
-	box-sizing: border-box;
-    -moz-box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
+    
+
     border-bottom-left-radius: 0;
     border-left: 1px dashed #555;
     float: left;
@@ -1239,7 +1266,8 @@ ol li {padding:4px 8px 4px 0;
 }
 
 ol > li:before {
-    -moz-box-sizing: border-box;
+    
+
     background: none repeat scroll 0 0 #DDDDDD;
     border-radius: 6px 6px 6px 6px;
     color: $grey_text;
@@ -1281,8 +1309,10 @@ legend {padding: 0; font-weight: bold; font-family: $sans; color: $primary_blue}
 	color: #fff;
 	text-decoration: none;
 	font-family: $sans;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
+
+	@inclulde box-sizing('border-box');
+
 }
 
 .btn-icon {background: url("#{$image_path}/images/sub-btn-icon.png") no-repeat 10px center $primary_blue; padding: 10px 10px 8px 40px; line-height:30px;}
@@ -1485,13 +1515,15 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
     padding: 10px 0;
 }
 .slide blockquote {
-   -moz-box-sizing: border-box;
+   
+
     border: 0 none;
     color: $grey_text;
     margin: 0;
     padding: 55px 60px 0;
     width: 100%;
-    box-sizing: border-box;
+    @inclulde box-sizing('border-box');
+
     font-size: 24px;
 }
 
@@ -1535,9 +1567,10 @@ blockquote.side:before {  left: 120px; background-color: #eee; color: $grey_text
 .issue-contents li,.ls-contents li {
 	float: left;
 	width: 50%;
-	-moz-box-sizing:border-box;
+	
 	padding: 0 20px;
-	box-sizing: border-box;
+	@inclulde box-sizing('border-box');
+
 	margin: 20px 0;
 }
 .issue-contents li {width: 100%; margin: 0 0 20px;	padding: 0 30px 0 20px;
@@ -1665,7 +1698,8 @@ height: 50px;
 }
 
 .carousel ul li img {
-box-sizing: border-box;
+@inclulde box-sizing('border-box');
+
 border: 5px solid white;
 }
 .carousel ul li span {
