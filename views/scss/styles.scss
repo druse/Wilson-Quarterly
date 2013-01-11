@@ -26,33 +26,30 @@ $secondary_blue_light: lighten( $secondary_blue, 40%);
 $secondary_blue_dark: darken( $secondary_blue, 10%);
 
 
-#block-boxes-article-anonymous {
-	background: url("#{$image_path}/images/premium-lock.png") no-repeat scroll 30px center #0657AF;
-    border-radius: 10px 10px 10px 10px;
-    margin: 20px 0;
-    padding: 10px 10px 10px 80px;
+.block.restricted {
+	background: url("#{$image_path}/images/premium-lock.png") no-repeat scroll 30px center #0657AF!important;
+  @include border-radius(6px);
+  margin: 20px 0!important;
+  padding: 10px 10px 10px 80px!important;
 }
-
-#block-boxes-article-anonymous:hover {
-	background-image: url("#{$image_path}/images/premium-unlock.png")
+.block.restricted:hover {
+	background-image: url("#{$image_path}/images/premium-unlock.png")!important;
 }
-
-#block-boxes-article-anonymous h3 {
+.block.restricted h3 {
 	color: #F6EA32;
-    margin-bottom: 10px;}
-
-.boxes-box-content p {
-	color: white;
-    margin: 0;
-    }
-
-.boxes-box-content a {
+  margin-bottom: 10px;
+}
+.block.restricted p {
+  color: white;
+  margin: 0;
+}
+.block.restricted a {
     color: #F6EA32;
 }
-
-.boxes-box-content a:hover {
+.block.restricted a:hover {
 	color: white;
 }
+
 .high-contrast{
   background-color: $grey_bg;
   color: #fff;
