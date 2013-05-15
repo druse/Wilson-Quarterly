@@ -1008,12 +1008,9 @@ margin-left: 20px;
 .vert {
 	@include box-sizing('border-box');
 
-
-
     border-bottom-left-radius: 0;
     border-left: 1px dashed #555;
     float: left;
-    height: 570px;
     margin-top: 0;
     padding: 235px 30px 30px;
     width: 50%;
