@@ -913,11 +913,8 @@ margin-left: 20px;
 .home .rotator {margin-bottom: 0}
 .rotator .slide {
 	@include box-sizing('border-box');
-
-
-
 	padding: 30px 50px;
-	height: 321px;
+
 }
 
 .rotator .slide.quote {	background:url("#{$image_path}/images/blockquote_bg.jpg") repeat scroll 0 0 #EEEEEE;}
