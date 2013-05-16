@@ -544,7 +544,7 @@ border-bottom: 1px dashed #ddd;
 }
 
 .article p {
-	margin-bottom: 20px;
+	margin: 0 0 20px;
 }
 
 .meta, .meta_end {
@@ -1099,7 +1099,8 @@ div.lead .slug {float: right; line-height: 36px;
   font-size: 50px;
   font-weight: bold;
   padding-right: 5px;
-
+  float:left;
+  padding-bottom:15px;
 }
 .sidebar {
 	font-size: 12px;
