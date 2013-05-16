@@ -24,6 +24,9 @@ $primary_blue_light: lighten( $primary_blue, 40%);
 $secondary_blue_light: lighten( $secondary_blue, 40%);
 $secondary_blue_dark: darken( $secondary_blue, 10%);
 
+headings{
+	font-family: $serif;
+}
 
 .block.restricted {
 	background: url("#{$image_path}/images/premium-lock.png") no-repeat scroll 30px center #0657AF!important;
@@ -1092,6 +1095,7 @@ div.lead .slug {float: right; line-height: 36px;
 	margin: 20px 10px 0 0;
 	line-height: 0.4;
 	color: $primary_blue;
+	font-family: $serif;
 }
 
 .raised-cap {
@@ -1220,16 +1224,15 @@ h1.logo{
 
 .logo a {}
 
-h2 {font-size: 24px; line-height: 32px; color: $primary_blue; font-family: $sans}
+h2 {font-size: 24px; line-height: 32px; color: $primary_blue;}
 
-h3 {font-size: 21px; line-height: 24px; color: $grey_text; font-family: $serif}
+h3 {font-size: 21px; line-height: 24px; color: $grey_text;}
 
-h3 a {color:$primary_blue;font-family: $sans;}
+h3 a {color:$primary_blue;}
 
 h4 {font-size: 16px; line-height: 21px; color: $primary_blue;}
 
-a {color: $primary_blue;font-family: $sans;}
-p a {font-family: $serif}
+a {color: $primary_blue;}
 
 a:hover {color: $secondary_blue; cursor: pointer; text-decoration: underline;}
 
